@@ -1,0 +1,14 @@
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/entity/Constants.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/redis/RedisOperator.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/entity/AutoEntity.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/repository/GenericRepository.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/controller/PagingResult.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/controller/ResponseUtils.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/service/GenericService.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/redis/RedisUtil.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/controller/AutoEntityController.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/service/impl/GenericServiceImpl.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/entity/CommonEntity.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/entity/CommonConstant.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/entity/MarkDeleteableModel.java
+/Users/wangyang/github/Java/ecommerce/common/src/main/java/com/basung/ecommerce/common/controller/PagingList.java

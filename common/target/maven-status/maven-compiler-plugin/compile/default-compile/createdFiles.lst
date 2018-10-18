@@ -1,0 +1,16 @@
+com/basung/ecommerce/common/entity/CommonConstant.class
+com/basung/ecommerce/common/redis/RedisUtil.class
+com/basung/ecommerce/common/repository/GenericRepository.class
+com/basung/ecommerce/common/entity/Constants.class
+com/basung/ecommerce/common/controller/PagingList.class
+com/basung/ecommerce/common/controller/AutoEntityController.class
+com/basung/ecommerce/common/entity/AutoEntity.class
+com/basung/ecommerce/common/controller/ResponseUtils.class
+com/basung/ecommerce/common/redis/RedisOperator.class
+com/basung/ecommerce/common/service/impl/GenericServiceImpl.class
+com/basung/ecommerce/common/controller/AutoEntityController$QueryParam.class
+com/basung/ecommerce/common/controller/PagingResult.class
+com/basung/ecommerce/common/service/GenericService.class
+com/basung/ecommerce/common/entity/CommonEntity.class
+com/basung/ecommerce/common/entity/MarkDeleteableModel.class
+com/basung/ecommerce/common/controller/AutoEntityController$1.class
