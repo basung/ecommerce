@@ -71,10 +71,4 @@ public class News extends AutoEntity {
     @Column(name = "details")
     private String details;
 
-    /**
-     * 文章排序码，越小越靠前
-     */
-    @Column(name = "sort_code")
-    private int sortCode;
-
 }

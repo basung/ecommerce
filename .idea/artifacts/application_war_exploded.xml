@@ -22,6 +22,9 @@
           <element id="archive" name="article-1.0.0-SNAPSHOT.jar">
             <element id="module-output" name="article" />
           </element>
+          <element id="archive" name="ec-wares-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="ec-wares" />
+          </element>
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter:2.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot:2.0.5.RELEASE" />

@@ -2,13 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65725120-9d08-42e0-9360-abe765ff0df1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/application_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/application_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/application.iml" beforeDir="false" afterPath="$PROJECT_DIR$/application/application.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/target/classes/com/basung/ecommerce/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/application/target/classes/com/basung/ecommerce/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/target/classes/com/basung/ecommerce/article/category/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/article/target/classes/com/basung/ecommerce/article/category/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/article/target/classes/com/basung/ecommerce/article/news/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/article/target/classes/com/basung/ecommerce/article/news/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/entity/CommonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/entity/CommonEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/classes/com/basung/ecommerce/common/entity/CommonEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/com/basung/ecommerce/common/entity/CommonEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/basung/ecommerce/controller/article/CategoryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/basung/ecommerce/controller/article/CategoryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/target/classes/com/basung/ecommerce/controller/article/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/controller/target/classes/com/basung/ecommerce/controller/article/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/springBootLog.my_info.2018-10-19.0.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/springBootLog.my_info.2018-10-19.0.log" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,11 +75,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/test.java">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AttributeItemController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/AttributeItemController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaresCategoryController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/WaresCategoryController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,9 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>redis_test</find>
-      <find>contextLoads</find>
-      <find>setRedisTemplate</find>
       <find>set</find>
       <find>isAccessAllowed</find>
       <find>responseError</find>
@@ -116,6 +149,9 @@
       <find>role</find>
       <find>ten</find>
       <find>Ca</find>
+      <find>order</find>
+      <find>Category</find>
+      <find>Brand</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,57 +167,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/AdminUser/AdminUserService.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/AdminUser/AdminUserRepository.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/AdminUser/AdminUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/shiro/CustomRealm.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/filter/JWTFilter.java" />
-        <option value="$PROJECT_DIR$/core/src/test/java/com/basung/ecommerce/utils/JWTUtilTest.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/utils/JWTUtil.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/utils/Utils.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/AOP/OperationLogAOP.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/RolePermissionController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUser.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/Role/Role.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantRepository.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantService.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantServiceImpl.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/TenantController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/PermissionController.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/RoleController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/Tenant.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/File.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/FileRepository.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/FileService.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/FileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFileRepository.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/controller/AutoEntityController.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/file/FileUtils.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/FileUploadController.java" />
-        <option value="$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFile.java" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/utils/ControllerUtils.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/category/CategoryRepository.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/category/CategoryService.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/category/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/category/Category.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/Article.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsRepository.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsService.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/CategoryService.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsServiceImpl.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/Controller/CategoryController.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/Controller/NewsController.java" />
-        <option value="$PROJECT_DIR$/application/pom.xml" />
-        <option value="$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/config/Swagger.java" />
-        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/spec/SpecItem.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/spec/SpecDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/spec/SpecManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/spec/SpecManagerImpl.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/spec/SpecItemDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/wear/Wera.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/Wera.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsManagerImpl.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsImage.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsImageDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsImageManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsImageManagerImpl.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsImage/GoodsImage.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/sku/SKU.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKU.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeManagerImpl.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemDao.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemManager.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemManagerImpl.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/entity/CommonEntity.java" />
-        <option value="$PROJECT_DIR$/article/pom.xml" />
+        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/Category.java" />
+        <option value="$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/Attribute.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItem.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/brand/Brand.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/category/Category.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/Goods.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/spec/Spec.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/spec/SpecItem.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/tags/Tags.java" />
         <option value="$PROJECT_DIR$/controller/pom.xml" />
-        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/AdminUserController.java" />
-        <option value="$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/Application.java" />
-        <option value="$PROJECT_DIR$/ec-wares/pom.xml" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/Category.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/AttributeItemController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/AttributiController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/BrandController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/CategoryController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/CategoryController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/NewsController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/TagsController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/SKUController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/GoodsSkuController.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/GoodsController.java" />
+        <option value="$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUManagerImpl.java" />
+        <option value="$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/SpecController.java" />
+        <option value="$PROJECT_DIR$/application/pom.xml" />
       </list>
     </option>
   </component>
@@ -232,37 +268,69 @@
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="ec-wares" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="ec-wares" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="ec-wares" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="ec-wares" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
               <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="ec-wares" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="wears" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ecommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ecommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="wares" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -531,7 +599,7 @@
       <workItem from="1539429163683" duration="6486000" />
       <workItem from="1539569230583" duration="12555000" />
       <workItem from="1539762987872" duration="41699000" />
-      <workItem from="1539911390777" duration="938000" />
+      <workItem from="1539911390777" duration="16087000" />
     </task>
     <servers />
   </component>
@@ -568,7 +636,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270345000" />
+    <option name="totallyTimeSpent" value="285494000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,6 +649,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
@@ -599,14 +668,15 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run Dashboard" order="0" weight="0.39179486" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.39179486" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.32923076" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32923076" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2808303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2808303" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32923076" />
       <window_info id="Learn" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -616,7 +686,6 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32923076" />
     </layout>
     <layout-to-restore>
       <window_info active="true" anchor="bottom" id="Run Dashboard" order="0" visible="true" weight="0.39179486" />
@@ -691,377 +760,447 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/springBootLog.my_info.2018-10-11.0.log" />
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFileServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFileService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFileRepository.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/utils/DataUtils.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1963">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/utils/StringUtilsEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-429">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/utils/ResKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/utils/FileTypeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/controller/AutoEntityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="78" column="53" lean-forward="true" selection-start-line="78" selection-start-column="53" selection-end-line="78" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/support/StrKit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="554" column="68" lean-forward="true" selection-start-line="554" selection-start-column="68" selection-end-line="554" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/com/basung/ecommerce/file/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/test.java" />
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/file/VFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="100" selection-start-line="8" selection-start-column="100" selection-end-line="8" selection-end-column="100" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItemManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUserRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/operationLog/OperationLog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/permission/Permission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="53" selection-end-column="29" />
+        <state relative-caret-position="210">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantRepository.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/role/Role.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="75" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="75" />
+        <state relative-caret-position="210">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantService.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/rolePermission/RolePermission.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="85" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="85" />
+        <state relative-caret-position="210">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/Category.java">
+    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/Tenant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="51" column="36" lean-forward="true" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="70" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/CategoryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/TenantServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsService.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/controller/AutoEntityController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="81" selection-start-line="8" selection-start-column="81" selection-end-line="8" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/NewsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/utils/ControllerUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="29" column="46" selection-start-line="29" selection-start-column="46" selection-end-line="29" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/config/Swagger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="33" column="82" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/entity/AutoEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/basung/ecommerce/common/entity/CommonEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="45" column="66" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/tenant/Tenant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        <state relative-caret-position="751">
+          <caret line="61" column="29" lean-forward="true" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/article/pom.xml">
+    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/category/Category.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        <state relative-caret-position="660">
+          <caret line="44" column="4" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/article/src/main/java/com/basung/ecommerce/article/news/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/Attribute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/category/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="778">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="222" column="23" selection-start-line="222" selection-start-column="23" selection-end-line="222" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsImage/GoodsImage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/spec/SpecItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/tags/Tags.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/brand/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="615">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="45" selection-end-line="41" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/NewsController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/attribute/AttributeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="120">
+          <caret line="8" column="94" lean-forward="true" selection-start-line="8" selection-start-column="94" selection-end-line="8" selection-end-column="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/AttributiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="30" column="84" selection-start-line="30" selection-start-column="84" selection-end-line="30" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="46" lean-forward="true" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state relative-caret-position="195">
+          <caret line="30" column="83" selection-start-line="30" selection-start-column="83" selection-end-line="30" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logs/springBootLog.my_info.2018-10-18.0.log" />
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/AOP/OperationLogAOP.java">
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/article/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="38" column="32" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        <state relative-caret-position="195">
+          <caret line="30" column="79" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/TagsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="75" column="39" lean-forward="true" selection-start-line="75" selection-start-column="39" selection-end-line="75" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/AdminLoginController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/brand/BrandManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="150">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/AdminUserController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/brand/BrandManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="37" column="13" selection-start-line="37" selection-start-column="13" selection-end-line="37" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="120">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/LoginLogController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/PermissionController.java">
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="585">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/RoleController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goods/GoodsManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
           <folding>
-            <element signature="method#update#0;class#RoleController#0" />
-            <element signature="method#del#0;class#RoleController#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/RolePermissionController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#add#0;class#RolePermissionController#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/admin/TenantController.java">
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="120">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKUDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/goodsSku/GoodsSKU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/GoodsSkuController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="33" column="44" lean-forward="true" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wares/spec/Spec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="11" lean-forward="true" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="83" column="5" selection-start-line="30" selection-start-column="4" selection-end-line="83" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/SpecController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/src/main/java/com/basung/ecommerce/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        <state relative-caret-position="240">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/AttributeItemController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ec-wares/pom.xml">
+    <entry file="file://$PROJECT_DIR$/controller/src/main/java/com/basung/ecommerce/controller/wares/WaresCategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/src/main/java/com/basung/ecommerce/adminUser/AdminUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" lean-forward="true" selection-start-column="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ec-wares/src/main/java/com/basung/ecommerce/wears/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        <state relative-caret-position="435">
+          <caret line="39" column="18" lean-forward="true" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -42,12 +42,6 @@ public class Category extends AutoEntity {
     @Column(name = "description", length = 512)
     private String description;
 
-    /**
-     * 文章类别排序码，越小越靠前
-     */
-    @Column(name = "sort_code")
-    private int sortCode;
-
     @Transient
     private List<Category> children;
 

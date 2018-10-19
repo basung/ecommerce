@@ -2,7 +2,6 @@ package com.basung.ecommerce.common.entity;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
-import org.hibernate.annotations.GenericGenerator;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -55,6 +54,13 @@ public  abstract class CommonEntity implements Serializable, CommonConstant {
   @Temporal(TemporalType.TIMESTAMP)
   @Column(name="modifier_time", nullable = false )
   private Date modifierTime;
+
+  /**
+   * 排序码，越小越靠前
+   */
+  @ApiModelProperty(value="排序码")
+  @Column(name = "order_num")
+  private int orderNum;
 
 
 }

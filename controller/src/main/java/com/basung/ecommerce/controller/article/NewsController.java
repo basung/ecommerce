@@ -25,10 +25,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @Api(value = "新闻接口  新闻接口", tags = { "新闻接口  新闻接口" })
 @RestController
-@RequestMapping("/article/api/news")
+@RequestMapping("/article/news")
 public class NewsController extends AutoEntityController<News, String, GlobalException, NewsService> {
 
-    private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
+    private final static Logger logger = LoggerFactory.getLogger(NewsController.class);
 
     @Autowired
     private NewsService newsService;

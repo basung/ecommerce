@@ -25,10 +25,10 @@ import javax.servlet.http.HttpServletResponse;
 
 @Api(value = "新闻类别接口  新闻类别接口", tags = { "新闻类别接口  新闻类别接口" })
 @RestController
-@RequestMapping("/article/api/category")
+@RequestMapping("/article/category")
 public class CategoryController extends AutoEntityController<Category, String, GlobalException, CategoryService> {
 
-    private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
+    private final static Logger logger = LoggerFactory.getLogger(CategoryController.class);
 
     @Autowired
     private CategoryService categoryService;

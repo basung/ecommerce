@@ -35,6 +35,7 @@
     <orderEntry type="module" module-name="admin" />
     <orderEntry type="module" module-name="core" />
     <orderEntry type="module" module-name="article" />
+    <orderEntry type="module" module-name="ec-wares" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-web:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter:2.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.5.RELEASE" level="project" />
