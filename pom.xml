@@ -17,6 +17,7 @@
         <module>controller</module>
         <module>core</module>
         <module>article</module>
+        <module>ec-wares</module>
     </modules>
 
     <parent>
