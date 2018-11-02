@@ -7,4 +7,7 @@ import com.basung.ecommerce.exception.GlobalException;
  * Date: 2018-10-19-下午12:31
  */
 public interface GoodsImageManager extends GenericService<GoodsImage, String, GlobalException> {
+
+    void removeByGoodsId(String goodsId) throws GlobalException;
+
 }

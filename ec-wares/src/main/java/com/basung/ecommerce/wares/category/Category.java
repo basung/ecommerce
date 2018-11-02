@@ -15,7 +15,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "BSS_WEARS_CATEGORY")
+@Table(name = "BSS_WARES_CATEGORY")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Category extends AutoEntity {

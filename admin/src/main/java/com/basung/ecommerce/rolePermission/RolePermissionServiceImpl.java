@@ -84,7 +84,7 @@ public class RolePermissionServiceImpl extends GenericServiceImpl<RolePermission
 		Permission permission = permissionService.findById(permissionId);
 		Map permissionMap = new HashMap();
 		permissionMap.put("roleId", roleId);
-		permissionMap.put("parentCode", permission.getParentCode());
+		permissionMap.put("parentId", permission.getParentId());
 		permissionMap.put("permissionId", permission.getId());
 		permissionMap.put("name", permission.getName());
 		permissionMap.put("relationUrl", permission.getRelationUrl());

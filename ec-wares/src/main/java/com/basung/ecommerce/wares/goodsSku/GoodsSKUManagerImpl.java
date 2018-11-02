@@ -22,4 +22,9 @@ public class GoodsSKUManagerImpl extends GenericServiceImpl<GoodsSKU, String, Gl
 
     protected GenericRepository<GoodsSKU, String> getRepository(){ return goodsSKUDao; }
 
+    @Transactional
+    public void removeByGoodsId(String goodsId) throws GlobalException {
+        goodsSKUDao.removeByGoodsId(goodsId);
+    }
+
 }

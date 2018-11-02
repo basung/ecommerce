@@ -7,5 +7,5 @@ import com.basung.ecommerce.exception.GlobalException;
  * Date: 2018-10-18-下午4:00
  */
 
-public interface CategoryService extends GenericService<Category, String, GlobalException> {
+public interface CategoryService extends GenericService<NewsCategory, String, GlobalException> {
 }

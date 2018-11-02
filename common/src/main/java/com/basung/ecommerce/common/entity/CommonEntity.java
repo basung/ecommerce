@@ -60,7 +60,7 @@ public  abstract class CommonEntity implements Serializable, CommonConstant {
    */
   @ApiModelProperty(value="排序码")
   @Column(name = "order_num")
-  private int orderNum;
+  private int orderNum = 0;
 
 
 }

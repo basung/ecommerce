@@ -22,8 +22,8 @@ public class Permission extends AutoEntity {
    * 权限父编号
    */
   @NotEmpty(message = "bss.action.parent_code.empty.error")
-  @Column(name = "parent_code", nullable = false, length = 64)
-  private String parentCode;
+  @Column(name = "parent_id", nullable = false, length = 64)
+  private String parentId;
 
 
   /**

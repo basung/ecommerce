@@ -1,4 +1,4 @@
-package com.basung.ecommerce.wares.attribute;
+package com.basung.ecommerce.wares.goodsTags;
 
 import com.basung.ecommerce.common.repository.GenericRepository;
 import com.basung.ecommerce.common.service.impl.GenericServiceImpl;
@@ -9,20 +9,23 @@ import javax.annotation.Resource;
 import javax.transaction.Transactional;
 
 /**
- * Date: 2018-10-19-下午2:30
+ * Date: 2018-10-23-下午2:43
  */
 
 @Transactional
 @Service
-public class AttributeManagerImpl extends GenericServiceImpl<Attribute, String, GlobalException> implements AttributeManager {
+public class GoodsTagsManagerImpl extends GenericServiceImpl<GoodsTags, String, GlobalException> implements GoodsTagsManager {
 
     @Resource
-    AttributeDao attributeDao;
+    GoodsTagsDao goodsTagsDao;
 
-    protected GenericRepository<Attribute, String> getRepository(){ return attributeDao; }
+    protected GenericRepository<GoodsTags, String> getRepository() {
+	  return goodsTagsDao;
+    }
 
     @Transactional
     public void removeByGoodsId(String goodsId) throws GlobalException {
-        attributeDao.removeByGoodsId(goodsId);
+	  goodsTagsDao.removeByGoodsId(goodsId);
     }
+
 }

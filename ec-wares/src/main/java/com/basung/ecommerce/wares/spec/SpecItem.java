@@ -14,16 +14,10 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "BSS_WEARS_SPEC_ITEM")
+@Table(name = "BSS_WARES_SPEC_ITEM")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class SpecItem extends AutoEntity {
-
-    /**
-     * 规格ID
-     */
-    @Column(name = "spec_id", length = 128, nullable = false)
-    private String specId;
 
     /**
      * 商品规格值

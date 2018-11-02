@@ -14,12 +14,12 @@ import javax.annotation.Resource;
 
 @Transactional
 @Service
-public class CategoryServiceImpl extends GenericServiceImpl<Category, String, GlobalException> implements CategoryService {
+public class CategoryServiceImpl extends GenericServiceImpl<NewsCategory, String, GlobalException> implements CategoryService {
 
     @Resource
     CategoryRepository categoryRepository;
 
-    protected GenericRepository<Category, String> getRepository() {
+    protected GenericRepository<NewsCategory, String> getRepository() {
 	  return categoryRepository;
     }
 }

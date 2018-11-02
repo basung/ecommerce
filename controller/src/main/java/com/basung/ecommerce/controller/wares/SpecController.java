@@ -1,6 +1,7 @@
 package com.basung.ecommerce.controller.wares;
 
 import com.basung.ecommerce.common.controller.AutoEntityController;
+import com.basung.ecommerce.common.controller.ResponseUtils;
 import com.basung.ecommerce.exception.GlobalException;
 import com.basung.ecommerce.utils.ControllerUtils;
 import com.basung.ecommerce.wares.spec.Spec;
@@ -54,8 +55,10 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody Spec spec, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-	  controllerUtils.setTenantInfoByCreate(spec);
-	  addAutoEntity(spec, request, response);
+        controllerUtils.setTenantInfoByCreate(spec);
+        Spec spec1 = specManager.createSpec(spec);
+        ResponseUtils.writeSuccessResult(response, spec1.getId());
+//	  addAutoEntity(spec, request, response);
     }
 
 
@@ -64,8 +67,10 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
     @ApiOperation(value = "修改", httpMethod = "PUT")
     public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody Spec spec, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-	  controllerUtils.setTenantInfoByUpdate(spec);
-	  updateAutoEntity(spec, response);
+	  controllerUtils.setTenantInfoByCreate(spec);
+	  Spec spec1 = specManager.updateSpec(spec);
+        ResponseUtils.writeSuccessResult(response, spec1.getId());
+//	  updateAutoEntity(spec, response);
     }
 
     @ResponseBody

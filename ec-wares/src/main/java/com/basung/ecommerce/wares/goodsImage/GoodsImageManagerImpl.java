@@ -19,4 +19,11 @@ public class GoodsImageManagerImpl extends GenericServiceImpl<GoodsImage, String
     GoodsImageDao goodsImageDao;
 
     protected GenericRepository<GoodsImage, String> getRepository(){ return goodsImageDao; }
+
+
+    @Transactional
+    public void removeByGoodsId(String goodsId) throws GlobalException {
+        goodsImageDao.removeByGoodsId(goodsId);
+    }
+
 }

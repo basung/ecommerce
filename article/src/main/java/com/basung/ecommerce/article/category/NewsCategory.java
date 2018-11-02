@@ -8,13 +8,14 @@ import javax.persistence.*;
 import java.util.List;
 
 /**
- * Date: 2018-10-18-下午3:42
+ * Date: 2018-10-20-上午10:08
  */
+
 @Entity
 @Table(name = "BSS_ARTICLE_CATEGORY")
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class Category extends AutoEntity {
+public class NewsCategory extends AutoEntity {
 
     public static final String ROOT_ID = "0";
 
@@ -43,8 +44,7 @@ public class Category extends AutoEntity {
     private String description;
 
     @Transient
-    private List<Category> children;
-
+    private List<NewsCategory> children;
 
 
 }

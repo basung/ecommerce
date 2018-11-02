@@ -1,7 +1,7 @@
 package com.basung.ecommerce.controller.article;
 
-import com.basung.ecommerce.article.category.Category;
 import com.basung.ecommerce.article.category.CategoryService;
+import com.basung.ecommerce.article.category.NewsCategory;
 import com.basung.ecommerce.common.controller.AutoEntityController;
 import com.basung.ecommerce.exception.GlobalException;
 import com.basung.ecommerce.utils.ControllerUtils;
@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
 @Api(value = "新闻类别接口  新闻类别接口", tags = { "新闻类别接口  新闻类别接口" })
 @RestController
 @RequestMapping("/article/category")
-public class CategoryController extends AutoEntityController<Category, String, GlobalException, CategoryService> {
+public class CategoryController extends AutoEntityController<NewsCategory, String, GlobalException, CategoryService> {
 
     private final static Logger logger = LoggerFactory.getLogger(CategoryController.class);
 
@@ -44,7 +44,7 @@ public class CategoryController extends AutoEntityController<Category, String, G
 
     @ResponseBody
     @GetMapping(value = "query")
-    @ApiOperation(value = "查询列表", httpMethod = "GET", response = Category.class)
+    @ApiOperation(value = "查询列表", httpMethod = "GET", response = NewsCategory.class)
     public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
     {
         queryAutoEntity(request, response);
@@ -52,7 +52,7 @@ public class CategoryController extends AutoEntityController<Category, String, G
 
     @ApiOperation(value = "新增", notes = "保存  新增")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody Category category, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody NewsCategory category, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         controllerUtils.setTenantInfoByCreate(category);
         addAutoEntity(category, request, response);
@@ -62,7 +62,7 @@ public class CategoryController extends AutoEntityController<Category, String, G
     @ResponseBody
     @PutMapping(value = "update")
     @ApiOperation(value = "修改", httpMethod = "PUT")
-    public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody Category category, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody NewsCategory category, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
         controllerUtils.setTenantInfoByUpdate(category);
         updateAutoEntity(category, response);
@@ -77,7 +77,7 @@ public class CategoryController extends AutoEntityController<Category, String, G
 
     @ResponseBody
     @GetMapping(value = "/get/{id}")
-    @ApiOperation(value = "获取单个对象", httpMethod = "GET", response = Category.class)
+    @ApiOperation(value = "获取单个对象", httpMethod = "GET", response = NewsCategory.class)
     public void get(@ApiParam(value = "标识", required = true) @PathVariable String id, HttpServletResponse response) throws Exception {
         getAutoEntity(id, response);
     }

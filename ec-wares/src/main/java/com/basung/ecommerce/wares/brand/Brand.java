@@ -4,17 +4,14 @@ import com.basung.ecommerce.common.entity.AutoEntity;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.EntityListeners;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * Date: 2018-10-19-上午10:04
  */
 
 @Entity
-@Table(name = "BSS_WEARS_BRAND")
+@Table(name = "BSS_WARES_BRAND")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Brand extends AutoEntity {
@@ -46,7 +43,8 @@ public class Brand extends AutoEntity {
     /**
      * 品牌故事
      */
-    @Column( name = "brand_desc", length = 128 )
+    @Lob
+    @Column( name = "brand_desc" )
     private String brandDesc;
 
 

@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletRequest;
 @Component
 public class ControllerUtils<T extends AutoEntity> {
 
-    private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
+    private final static Logger logger = LoggerFactory.getLogger(ControllerUtils.class);
 
     @Autowired
     private RedisUtil redisUtil;

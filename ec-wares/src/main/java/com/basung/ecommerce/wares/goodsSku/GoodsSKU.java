@@ -12,16 +12,10 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(name = "BSS_WEARS_GOODS_SKU")
+@Table(name = "BSS_WARES_GOODS_SKU")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class GoodsSKU extends AutoEntity {
-
-    /**
-     * 商品标识
-     */
-    @Column(name = "goods_id", nullable = false, updatable = false)
-    private long goodsId;
 
     /**
      * 价格,单位为元
@@ -42,22 +36,16 @@ public class GoodsSKU extends AutoEntity {
     private double costPrice;
 
     /**
+     * SKU图片
+     */
+    @Column( name = "sku_image", length = 256 )
+    private String skuImage;
+
+    /**
      * SKU 名称 eg: 玉兰油沐浴露200ml
      */
     @Column(name = "sku_name")
     private String skuName;
-
-    /**
-     * SKU 单位
-     */
-    @Column(name = "sku_unit")
-    private String skuUnit;
-
-    /**
-     * SKU 单位重量
-     */
-    @Column(name = "sku_weight")
-    private String skuWeight;
 
     /**
      * 库存

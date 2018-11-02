@@ -17,7 +17,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "BSS_WEARS_TAGS")
+@Table(name = "BSS_WARES_TAGS")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Tags extends AutoEntity {
@@ -25,19 +25,31 @@ public class Tags extends AutoEntity {
     /**
      * tag名称
      */
-    @Column( name = "name", length = 128 )
-    private String name;
+    @Column( name = "tags_name", length = 128 )
+    private String tagsName;
 
     /**
      * tag颜色
      */
-    @Column( name = "color", length = 128 )
-    private String color;
+    @Column( name = "tags_color", length = 256 )
+    private String tagsColor;
+
+    /**
+     * tag颜色
+     */
+    @Column( name = "tags_color_Hex", length = 256 )
+    private String tagsColorHex;
+
+    /**
+     * tag图片
+     */
+    @Column( name = "tags_logo", length = 512 )
+    private String tagsLogo;
 
     /**
      * tag描述
      */
-    @Column( name = "description", length = 128 )
-    private String description;
+    @Column( name = "tags_desc", length = 512 )
+    private String tagsDesc;
 
 }

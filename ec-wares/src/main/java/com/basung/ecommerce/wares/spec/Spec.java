@@ -1,6 +1,7 @@
 package com.basung.ecommerce.wares.spec;
 
 import com.basung.ecommerce.common.entity.AutoEntity;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
@@ -15,7 +16,7 @@ import java.util.List;
  */
 
 @Entity
-@Table(name = "BSS_WEARS_SPEC")
+@Table(name = "BSS_WARES_SPEC")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class Spec extends AutoEntity {
@@ -30,7 +31,14 @@ public class Spec extends AutoEntity {
      * 规格备注
      */
     @Column( name = "spec_remark", length = 128 )
-    private String spec_remark;
+    private String specRemark;
+
+    /**
+     * 是否开启规格图片
+     */
+    @ApiModelProperty(value="是否可用")
+    @Column(name = "is_spec_image")
+    private Integer isSpecImage = 0;
 
     /**
      * 商品规格值

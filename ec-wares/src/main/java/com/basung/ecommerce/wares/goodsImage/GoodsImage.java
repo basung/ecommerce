@@ -14,17 +14,10 @@ import javax.persistence.Table;
  */
 
 @Entity
-@Table(name = "BSS_WEARS_GOODS_IMAGE")
+@Table(name = "BSS_WARES_GOODS_IMAGE")
 @Data
 @EntityListeners(AuditingEntityListener.class)
 public class GoodsImage extends AutoEntity {
-
-
-    /**
-     * 商品标识,统一规格时使用
-     */
-    @Column(name = "goods_id", nullable = false, updatable = false)
-    private long goodsId;
 
     /**
      * 图片路径

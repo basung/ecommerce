@@ -79,6 +79,7 @@ public class AdminLoginController extends AutoEntityController<AdminUser, String
         if (!StringUtils.isBlank(username) && !StringUtils.isBlank(password)) {
 		AdminUser adminUser = adminUserService.getAdminUserByUserName(username);
 
+
 		if (adminUser == null) {
 		    //记录登录日志
 		    LoginLog loginLog = new LoginLog();

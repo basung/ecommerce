@@ -1,4 +1,4 @@
-package com.basung.ecommerce.wares.goodsImage;
+package com.basung.ecommerce.wares.goodsTags;
 
 import com.basung.ecommerce.common.repository.GenericRepository;
 import org.springframework.data.jpa.repository.Modifying;
@@ -7,14 +7,13 @@ import org.springframework.data.jpa.repository.Query;
 import javax.transaction.Transactional;
 
 /**
- * Date: 2018-10-19-下午12:31
+ * Date: 2018-10-23-下午2:42
  */
-public interface GoodsImageDao extends GenericRepository<GoodsImage, String> {
-
+public interface GoodsTagsDao extends GenericRepository<GoodsTags, String> {
 
     @Modifying
     @Transactional
-    @Query(value = " DELETE FROM bss_wares_goods_image WHERE goods_id = ?1 ", nativeQuery = true)
+    @Query(value = " DELETE FROM bss_wares_goods_tags WHERE goods_id = ?1 ", nativeQuery = true)
     void removeByGoodsId(String goodsId);
 
 }
