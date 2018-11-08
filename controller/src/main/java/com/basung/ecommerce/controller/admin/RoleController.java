@@ -27,70 +27,68 @@ import javax.servlet.http.HttpServletResponse;
  * Time: 下午9:47
  */
 
-@Api(value = "角色管理接口  平台角色管理", tags = { "角色管理接口  平台角色管理" })
+@Api(value = "角色管理接口  平台角色管理", tags = {"角色管理接口  平台角色管理"})
 @RestController
 @RequestMapping("/admin/role")
 public class RoleController extends AutoEntityController<Role, String, GlobalException, RoleService> {
 
-  private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
+    private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
 
-  @Autowired
-  private RoleService roleService;
+    @Autowired
+    private RoleService roleService;
 
-  @Autowired
-  private ControllerUtils controllerUtils;
+    @Autowired
+    private ControllerUtils controllerUtils;
 
-  @PostConstruct
-  public void init()
-  {
-    this.autoEntityManager = roleService;
-  }
-
-
-  @ResponseBody
-  @GetMapping(value = "query")
-  @ApiOperation(value = "查询列表", httpMethod = "GET", response = Role.class)
-  public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-  {
-    queryAutoEntity(request, response);
-  }
-
-  @ApiOperation(value = "新增  权限", notes = "保存  新增")
-  @RequestMapping(value = "/create", method = RequestMethod.POST)
-  public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody Role role, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
-
-    controllerUtils.setTenantInfoByCreate(role);
-
-    logger.info(" role ==== {} ", role.toString());
-
-    addAutoEntity(role, request, response);
-  }
+    @PostConstruct
+    public void init() {
+	  this.autoEntityManager = roleService;
+    }
 
 
-  @ResponseBody
-  @PutMapping(value = "update")
-  @ApiOperation(value = "修改", httpMethod = "PUT")
-  public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody Role role, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    @ResponseBody
+    @GetMapping(value = "query")
+    @ApiOperation(value = "查询列表", httpMethod = "GET", response = Role.class)
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	  queryAutoEntity(request, response);
+    }
 
-    controllerUtils.setTenantInfoByUpdate(role);
+    @ApiOperation(value = "新增  权限", notes = "保存  新增")
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody Role role, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-    logger.info(" role ==== {} ", role.toString());
+	  controllerUtils.setTenantInfoByCreate(role);
 
-    updateAutoEntity(role, response);
-  }
+	  logger.info(" role ==== {} ", role.toString());
 
-  @ResponseBody
-  @DeleteMapping(value = "/del/{id}")
-  @ApiOperation(value = "删除", httpMethod = "DELETE")
-  public void del(@ApiParam(value = "标识", required = true) @PathVariable(value = "id") String id, HttpServletResponse response) throws Exception {
-    removeAutoEntity(id, response);
-  }
+	  addAutoEntity(role, request, response);
+    }
 
-  @ResponseBody
-  @GetMapping(value = "/get/{id}")
-  @ApiOperation(value = "获取单个对象", httpMethod = "GET", response = Role.class)
-  public void get(@ApiParam(value = "标识", required = true) @PathVariable String id, HttpServletResponse response) throws Exception {
-    getAutoEntity(id, response);
-  }
+
+    @ResponseBody
+    @PutMapping(value = "update")
+    @ApiOperation(value = "修改", httpMethod = "PUT")
+    public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody Role role, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
+
+	  controllerUtils.setTenantInfoByUpdate(role);
+
+	  logger.info(" role ==== {} ", role.toString());
+
+	  updateAutoEntity(role, response);
+    }
+
+    @ResponseBody
+    @DeleteMapping(value = "/del/{id}")
+    @ApiOperation(value = "删除", httpMethod = "DELETE")
+    public void del(@ApiParam(value = "标识", required = true) @PathVariable(value = "id") String id, HttpServletResponse response) throws Exception {
+	  removeAutoEntity(id, response);
+    }
+
+    @ResponseBody
+    @GetMapping(value = "/get/{id}")
+    @ApiOperation(value = "获取单个对象", httpMethod = "GET", response = Role.class)
+    public void get(@ApiParam(value = "标识", required = true) @PathVariable String id, HttpServletResponse response) throws Exception {
+	  getAutoEntity(id, response);
+    }
 
 }

@@ -19,10 +19,12 @@ public class AttributeManagerImpl extends GenericServiceImpl<Attribute, String, 
     @Resource
     AttributeDao attributeDao;
 
-    protected GenericRepository<Attribute, String> getRepository(){ return attributeDao; }
+    protected GenericRepository<Attribute, String> getRepository() {
+	  return attributeDao;
+    }
 
     @Transactional
     public void removeByGoodsId(String goodsId) throws GlobalException {
-        attributeDao.removeByGoodsId(goodsId);
+	  attributeDao.removeByGoodsId(goodsId);
     }
 }

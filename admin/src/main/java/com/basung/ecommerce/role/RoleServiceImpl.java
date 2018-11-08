@@ -20,12 +20,12 @@ import javax.annotation.Resource;
 @Service
 public class RoleServiceImpl extends GenericServiceImpl<Role, String, GlobalException> implements RoleService {
 
-  @Resource
-  RoleRepository roleRepository;
+    @Resource
+    RoleRepository roleRepository;
 
-  protected GenericRepository<Role, String> getRepository() {
-    return roleRepository;
-  }
+    protected GenericRepository<Role, String> getRepository() {
+	  return roleRepository;
+    }
 
 
 }

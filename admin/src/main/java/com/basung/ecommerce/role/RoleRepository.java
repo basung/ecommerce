@@ -11,8 +11,7 @@ import org.springframework.stereotype.Repository;
  * Time: 下午9:38
  */
 @Repository
-public interface RoleRepository extends GenericRepository<Role,String> {
-
+public interface RoleRepository extends GenericRepository<Role, String> {
 
 
 }

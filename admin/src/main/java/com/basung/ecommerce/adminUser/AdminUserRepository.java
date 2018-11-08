@@ -4,7 +4,6 @@ import com.basung.ecommerce.common.repository.GenericRepository;
 import org.springframework.data.jpa.repository.Query;
 
 
-
 /**
  * @program: ecommerce
  * Description: ${description}

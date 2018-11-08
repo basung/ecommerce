@@ -32,7 +32,7 @@ public class GeekPropertyConfigurer extends PropertyPlaceholderConfigurer {
 		String[] var4 = files;
 		int var5 = files.length;
 
-		for(int var6 = 0; var6 < var5; ++var6) {
+		for (int var6 = 0; var6 < var5; ++var6) {
 		    String filepath = var4[var6];
 
 		    try {
@@ -44,7 +44,7 @@ public class GeekPropertyConfigurer extends PropertyPlaceholderConfigurer {
 				resource = new ClassPathResource(filepath);
 			  }
 
-			  EncodedResource encodedResource = new EncodedResource((Resource)resource, "UTF-8");
+			  EncodedResource encodedResource = new EncodedResource((Resource) resource, "UTF-8");
 			  CollectionUtils.mergePropertiesIntoMap(PropertiesLoaderUtils.loadProperties(encodedResource), props);
 		    } catch (Throwable var11) {
 			  GeekSystem.getLog().warn("Can't parse config file " + filepath, var11);
@@ -59,8 +59,8 @@ public class GeekPropertyConfigurer extends PropertyPlaceholderConfigurer {
 	  super.processProperties(beanFactoryToProcess, props);
 	  Enumeration propertyNames = props.propertyNames();
 
-	  while(propertyNames.hasMoreElements()) {
-		String propertyName = (String)propertyNames.nextElement();
+	  while (propertyNames.hasMoreElements()) {
+		String propertyName = (String) propertyNames.nextElement();
 		String propertyValue = props.getProperty(propertyName);
 		GeekSystem.getLog().debug("Set property " + propertyName + "to " + propertyValue);
 		GeekSystem.setProperty(propertyName, propertyValue);

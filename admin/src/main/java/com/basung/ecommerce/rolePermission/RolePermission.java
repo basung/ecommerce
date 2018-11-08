@@ -20,11 +20,11 @@ import javax.validation.constraints.NotEmpty;
 @Data
 public class RolePermission extends AutoEntity {
 
-  @Column(name = "role_id", nullable = false)
-  private String roleId;
+    @Column(name = "role_id", nullable = false)
+    private String roleId;
 
-  @Column(name = "relation_id", nullable = false)
-  private String relationId;
+    @Column(name = "relation_id", nullable = false)
+    private String relationId;
 
 
 }

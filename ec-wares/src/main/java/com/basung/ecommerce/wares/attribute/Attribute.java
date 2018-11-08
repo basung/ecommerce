@@ -22,13 +22,14 @@ public class Attribute extends AutoEntity {
     /**
      * 属性组
      */
-    @Column( name = "attr_name" )
+    @Column(name = "attr_name")
     private String attrName;
 
     /**
      * 属性值
      */
-    @Column( name = "attr_value" )
+    @Column(name = "attr_value")
     private String attrValue;
+
 
 }

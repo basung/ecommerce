@@ -42,12 +42,12 @@ public class Goods extends AutoEntity {
     //商品类型: 实体商品
     public static final int PHYSICAL_GOODS = 1;
     //商品类型: 虚拟商品(无需物流)
-    public static final int VIRTUAL_GOODS =2;
+    public static final int VIRTUAL_GOODS = 2;
 
     /**
      * 商品名称
      */
-    @Column( name = "goods_name", length = 128 )
+    @Column(name = "goods_name", length = 128)
     private String goodsName;
 
 
@@ -261,7 +261,7 @@ public class Goods extends AutoEntity {
     /**
      * 商品主图
      */
-    @Column( name = "goods_default_image" )
+    @Column(name = "goods_default_image")
     private String goodsDefaultImage;
 
 
@@ -306,8 +306,6 @@ public class Goods extends AutoEntity {
 //     */
 //    @Transient
 //    private Carriage carriage;
-
-
 
 
 }

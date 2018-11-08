@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Date: 2018-10-19-下午3:22
  */
-@Api(value = "商品规格  商品规格", tags = { "商品规格  商品规格" })
+@Api(value = "商品规格  商品规格", tags = {"商品规格  商品规格"})
 @RestController
 @RequestMapping("/wares/spec")
 public class SpecController extends AutoEntityController<Spec, String, GlobalException, SpecManager> {
@@ -37,8 +37,7 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = specManager;
     }
 
@@ -46,8 +45,7 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = Spec.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 
@@ -55,9 +53,9 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody Spec spec, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        controllerUtils.setTenantInfoByCreate(spec);
-        Spec spec1 = specManager.createSpec(spec);
-        ResponseUtils.writeSuccessResult(response, spec1.getId());
+	  controllerUtils.setTenantInfoByCreate(spec);
+	  Spec spec1 = specManager.createSpec(spec);
+	  ResponseUtils.writeSuccessResult(response, spec1.getId());
 //	  addAutoEntity(spec, request, response);
     }
 
@@ -69,7 +67,7 @@ public class SpecController extends AutoEntityController<Spec, String, GlobalExc
 
 	  controllerUtils.setTenantInfoByCreate(spec);
 	  Spec spec1 = specManager.updateSpec(spec);
-        ResponseUtils.writeSuccessResult(response, spec1.getId());
+	  ResponseUtils.writeSuccessResult(response, spec1.getId());
 //	  updateAutoEntity(spec, response);
     }
 

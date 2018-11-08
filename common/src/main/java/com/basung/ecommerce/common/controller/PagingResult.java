@@ -17,86 +17,86 @@ public class PagingResult {
     }
 
     public static <T> PagingResult getResult(PagingList<T> list) {
-        return getResult(list, (long)list.getTotalCount());
+	  return getResult(list, (long) list.getTotalCount());
     }
 
     public static <T> PagingResult getResult(List<T> list, long totalCount) {
-        PagingResult result = new PagingResult();
-        result.setRows(list);
-        result.setTotal(totalCount);
-        return result;
+	  PagingResult result = new PagingResult();
+	  result.setRows(list);
+	  result.setTotal(totalCount);
+	  return result;
     }
 
     public int getStatus() {
-        return this.status;
+	  return this.status;
     }
 
     public void setStatus(int status) {
-        this.status = status;
+	  this.status = status;
     }
 
     public long getTotal() {
-        return this.total;
+	  return this.total;
     }
 
     public void setTotal(long total) {
-        this.total = total;
+	  this.total = total;
     }
 
     public Object[] getRows() {
-        return this.rows;
+	  return this.rows;
     }
 
     public void setRows(Object[] rows) {
-        this.rows = rows;
+	  this.rows = rows;
     }
 
     public <T> void setRows(List<T> data) {
-        this.rows = new Object[data.size()];
+	  this.rows = new Object[data.size()];
 
-        for(int i = 0; i < data.size(); ++i) {
-            this.rows[i] = data.get(i);
-        }
+	  for (int i = 0; i < data.size(); ++i) {
+		this.rows[i] = data.get(i);
+	  }
 
     }
 
     public Map<String, Object> getParams() {
-        return this.params;
+	  return this.params;
     }
 
     public void setParams(Map<String, Object> params) {
-        this.params = params;
+	  this.params = params;
     }
 
     public void setParam(String key, Object value) {
-        if (this.params == null) {
-            this.params = new HashMap();
-        }
+	  if (this.params == null) {
+		this.params = new HashMap();
+	  }
 
-        this.params.put(key, value);
+	  this.params.put(key, value);
     }
 
     public int getPageIndex() {
-        return this.pageIndex;
+	  return this.pageIndex;
     }
 
     public void setPageIndex(int pageIndex) {
-        this.pageIndex = pageIndex;
+	  this.pageIndex = pageIndex;
     }
 
     public int getPageSize() {
-        return this.pageSize;
+	  return this.pageSize;
     }
 
     public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
+	  this.pageSize = pageSize;
     }
 
     public String getCallback() {
-        return this.callback;
+	  return this.callback;
     }
 
     public void setCallback(String callback) {
-        this.callback = callback;
+	  this.callback = callback;
     }
 }

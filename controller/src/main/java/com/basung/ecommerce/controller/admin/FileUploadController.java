@@ -45,8 +45,7 @@ public class FileUploadController extends AutoEntityController<VFile, String, Gl
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = vFileService;
     }
 
@@ -63,26 +62,25 @@ public class FileUploadController extends AutoEntityController<VFile, String, Gl
 //	  logger.info(" OriginalFilename === {}  ", file.getOriginalFilename());
 //	  logger.info(" Size === {}  ", file.getSize());
 //	  logger.info(" UPLOADED_FOLDER === {}  ", UPLOADED_FOLDER);
-	  String filePath = FileUtils.upload(file,UPLOADED_FOLDER + "rocky/");
+	  String filePath = FileUtils.upload(file, UPLOADED_FOLDER + "rocky/");
 
 
 	  VFile vFile = new VFile();
 	  vFile.setName(file.getOriginalFilename());
 	  vFile.setContentType(file.getContentType());
 	  vFile.setFileSize(file.getSize());
-	  vFile.setFilePath(StrKit.removePrefixIgnoreCase(filePath,"/Users/wangyang/github/Java/ecommerce/static/"));
+	  vFile.setFilePath(StrKit.removePrefixIgnoreCase(filePath, "/Users/wangyang/github/Java/ecommerce/static/"));
 
 	  controllerUtils.setTenantInfoByCreate(vFile);
 
-	  addAutoEntityCustom(vFile,request,response);
+	  addAutoEntityCustom(vFile, request, response);
 
     }
 
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = VFile.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 

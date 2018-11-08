@@ -17,7 +17,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  */
 @SpringBootApplication
 @EnableCaching
-//@ComponentScan(basePackages = {"com.basung.ecommerce"})
 @ComponentScan({"com.basung.ecommerce"})
 @EnableJpaAuditing
 public class Application {
@@ -25,8 +24,8 @@ public class Application {
     private final static Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
-        logger.info("Application is success!");
+	  SpringApplication.run(Application.class, args);
+	  logger.info("Application is Success!");
     }
 
 }

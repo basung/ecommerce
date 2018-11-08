@@ -15,9 +15,9 @@ import java.util.Set;
  * Time: 下午9:38
  */
 @Repository
-public interface PermissionRepository extends GenericRepository<Permission,String> {
+public interface PermissionRepository extends GenericRepository<Permission, String> {
 
-  @Query(value="select p.* from bss_admin_permission p left join bss_admin_role_permission rp on p.id=rp.relation_id where rp.role_id = ?1",nativeQuery=true)
-  List<Permission> getPermissionsByRoleId(String roleId);
+    @Query(value = "select p.* from bss_admin_permission p left join bss_admin_role_permission rp on p.id=rp.relation_id where rp.role_id = ?1", nativeQuery = true)
+    List<Permission> getPermissionsByRoleId(String roleId);
 
 }

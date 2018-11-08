@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2018-10-19-下午3:10
  */
 
-@Api(value = "商品Tags  商品Tags", tags = { "商品Tags  商品Tags" })
+@Api(value = "商品Tags  商品Tags", tags = {"商品Tags  商品Tags"})
 @RestController
 @RequestMapping("/wares/tags")
 public class TagsController extends AutoEntityController<Tags, String, GlobalException, TagsManager> {
@@ -37,8 +37,7 @@ public class TagsController extends AutoEntityController<Tags, String, GlobalExc
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = tagsManager;
     }
 
@@ -46,8 +45,7 @@ public class TagsController extends AutoEntityController<Tags, String, GlobalExc
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = Tags.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 

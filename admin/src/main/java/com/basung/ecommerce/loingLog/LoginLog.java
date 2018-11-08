@@ -25,19 +25,19 @@ public class LoginLog extends AutoEntity {
     /**
      * 日志名称
      */
-    @Column(name = "log_name",  length = 128)
+    @Column(name = "log_name", length = 128)
     private String logName;
 
     /**
      * 登录人员ID
      */
-    @Column(name = "user_id",  length = 128)
+    @Column(name = "user_id", length = 128)
     private String userId;
 
     /**
      * 管理员id
      */
-    @Column(name = "login_name",  length = 128)
+    @Column(name = "login_name", length = 128)
     private String loginName;
 
     /**
@@ -48,7 +48,7 @@ public class LoginLog extends AutoEntity {
     /**
      * 具体消息
      */
-    @Column( length = 256 )
+    @Column(length = 256)
     private String message;
 
     /**

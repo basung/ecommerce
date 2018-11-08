@@ -25,58 +25,58 @@ public abstract class GenericServiceImpl<T extends CommonEntity, ID extends Seri
 
 
     @Override
-    public T save(T t){
-        return this.getRepository().save(t);
+    public T save(T t) {
+	  return this.getRepository().save(t);
     }
 
     @Override
-    public  Iterable<T> save(Iterable<T> entities){
-        return this.getRepository().saveAll(entities);
+    public Iterable<T> save(Iterable<T> entities) {
+	  return this.getRepository().saveAll(entities);
     }
 
     @Override
-    public void delete(ID id){
-        this.getRepository().deleteById(id);
+    public void delete(ID id) {
+	  this.getRepository().deleteById(id);
     }
 
     @Override
-    public void delete(T t){
-        this.getRepository().delete(t);
+    public void delete(T t) {
+	  this.getRepository().delete(t);
     }
 
     @Override
-    public T findById(ID id){
+    public T findById(ID id) {
 
-        if(this.getRepository().findById(id).isPresent()){
-            return this.getRepository().findById(id).get();
-        }else {
-            return null;
-        }
+	  if (this.getRepository().findById(id).isPresent()) {
+		return this.getRepository().findById(id).get();
+	  } else {
+		return null;
+	  }
     }
 
     @Override
-    public List<T> findAll(){
-        return this.getRepository().findAll();
+    public List<T> findAll() {
+	  return this.getRepository().findAll();
     }
 
     @Override
-    public Boolean existsById(ID id){
-        return this.getRepository().existsById(id);
+    public Boolean existsById(ID id) {
+	  return this.getRepository().existsById(id);
     }
 
     @Override
-    public Page<T> findAll(Pageable pageable){
-        return this.getRepository().findAll(pageable);
+    public Page<T> findAll(Pageable pageable) {
+	  return this.getRepository().findAll(pageable);
     }
 
     @Override
-    public  List<T> query(Specification params){
-        return this.getRepository().findAll(params);
+    public List<T> query(Specification params) {
+	  return this.getRepository().findAll(params);
     }
 
     @Override
-    public Page<T> query(Specification params,Pageable pageable){
-        return  this.getRepository().findAll(params,pageable);
+    public Page<T> query(Specification params, Pageable pageable) {
+	  return this.getRepository().findAll(params, pageable);
     }
 
 }

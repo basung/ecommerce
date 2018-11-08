@@ -47,7 +47,7 @@ public class AdminLoginController extends AutoEntityController<AdminUser, String
     private final static Logger logger = LoggerFactory.getLogger(AutoEntityController.class);
 
     // Redis过期时间 24 小时
-    private static final long EXPIRE_TIME = 24 * 60 * 60 ;
+    private static final long EXPIRE_TIME = 24 * 60 * 60;
 
     @Autowired
     private AdminUserService adminUserService;
@@ -74,9 +74,9 @@ public class AdminLoginController extends AutoEntityController<AdminUser, String
      */
     @ApiOperation(value = "用户登录接口 通过用户名和密码进行登录", notes = "用户登录接口 通过用户名和密码进行登录")
     @RequestMapping(value = "/login", method = RequestMethod.POST)
-    public void login(@RequestParam("username") String username, @RequestParam("password") String password , HttpServletResponse response) throws Exception {
+    public void login(@RequestParam("username") String username, @RequestParam("password") String password, HttpServletResponse response) throws Exception {
 
-        if (!StringUtils.isBlank(username) && !StringUtils.isBlank(password)) {
+	  if (!StringUtils.isBlank(username) && !StringUtils.isBlank(password)) {
 		AdminUser adminUser = adminUserService.getAdminUserByUserName(username);
 
 
@@ -91,7 +91,7 @@ public class AdminLoginController extends AutoEntityController<AdminUser, String
 		    loginLog.setIp(getIp());
 		    loginLogService.save(loginLog);
 		    ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_NOT_EXIST.getCode(), ExceptionEnum.USER_NOT_EXIST.getMessage());
-		} else if (!adminUser.getPassword().equals(MD5.md5(password,adminUser.getSalt()))) {
+		} else if (!adminUser.getPassword().equals(MD5.md5(password, adminUser.getSalt()))) {
 		    //记录登录日志
 		    LoginLog loginLog = new LoginLog();
 		    loginLog.setLogName("登录失败日志");
@@ -147,8 +147,8 @@ public class AdminLoginController extends AutoEntityController<AdminUser, String
 
 		    ResponseUtils.writeSuccessResult(response, responseMap);
 		}
-	  }else {
-		ResponseUtils.writeErrorResult(response,ExceptionEnum.PARAM_NOT_COMPLETE.getCode(),ExceptionEnum.PARAM_NOT_COMPLETE.getMessage());
+	  } else {
+		ResponseUtils.writeErrorResult(response, ExceptionEnum.PARAM_NOT_COMPLETE.getCode(), ExceptionEnum.PARAM_NOT_COMPLETE.getMessage());
 	  }
 
     }

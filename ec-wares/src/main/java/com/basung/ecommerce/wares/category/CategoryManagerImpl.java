@@ -19,6 +19,8 @@ public class CategoryManagerImpl extends GenericServiceImpl<Category, String, Gl
     @Resource
     CategoryDao categoryDao;
 
-    protected GenericRepository<Category, String> getRepository(){ return categoryDao; }
+    protected GenericRepository<Category, String> getRepository() {
+	  return categoryDao;
+    }
 
 }

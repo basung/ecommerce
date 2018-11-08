@@ -81,7 +81,7 @@ public class GoodsController extends AutoEntityController<Goods, String, GlobalE
     @ApiOperation(value = "修改", httpMethod = "PUT")
     public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody Goods goods, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        if(goodsManager.existsById(goods.getId())){
+	  if (goodsManager.existsById(goods.getId())) {
 //            String goodsId = goods.getId();
 //		// 1、删除相关联的图片
 //		if (goodsImageManager.existsByGoodsId(goodsId)) {
@@ -106,7 +106,7 @@ public class GoodsController extends AutoEntityController<Goods, String, GlobalE
 		controllerUtils.setTenantInfoByUpdate(goods);
 		Goods goods1 = goodsManager.updateGoods(goods);
 		ResponseUtils.writeSuccessResult(response, goods1.getId());
-	  }else {
+	  } else {
 		ResponseUtils.writeErrorResult(response, 400, "记录不存在!!!");
 	  }
 

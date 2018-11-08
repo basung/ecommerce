@@ -47,10 +47,10 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
 		//如果存在，则进入 executeLogin 方法执行登入，检查 token 是否正确
 		try {
 		    Boolean isLogin = executeLogin(request, response);
-		    if(isLogin){
-		        return true;
-		    }else {
-			  ResponseUtils.writeErrorResult((HttpServletResponse)response, ExceptionEnum.USER_TOKEN_ERROR.getCode(),ExceptionEnum.USER_TOKEN_ERROR.getMessage());
+		    if (isLogin) {
+			  return true;
+		    } else {
+			  ResponseUtils.writeErrorResult((HttpServletResponse) response, ExceptionEnum.USER_TOKEN_ERROR.getCode(), ExceptionEnum.USER_TOKEN_ERROR.getMessage());
 		    }
 		} catch (Exception e) {
 		    e.printStackTrace();
@@ -116,7 +116,7 @@ public class JWTFilter extends BasicHttpAuthenticationFilter {
 
 	  HttpServletResponse httpServletResponse = (HttpServletResponse) response;
 	  // 设置编码，否则中文字符在重定向时会变为空字符串
-	   message = URLEncoder.encode(message, "UTF-8");
-	   httpServletResponse.sendRedirect("/unauthorized/" + message);
+	  message = URLEncoder.encode(message, "UTF-8");
+	  httpServletResponse.sendRedirect("/unauthorized/" + message);
     }
 }

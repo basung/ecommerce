@@ -19,8 +19,8 @@ import java.nio.channels.FileChannel;
 public class FileUtils {
 
     /**
-     * @param file     文件
-     * @param path     文件存放路径
+     * @param file 文件
+     * @param path 文件存放路径
      * @return
      */
     public static String upload(MultipartFile file, String path) throws IOException {

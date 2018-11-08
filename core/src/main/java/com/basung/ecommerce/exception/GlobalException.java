@@ -13,29 +13,29 @@ public class GlobalException extends RuntimeException {
     private String message;
 
     public GlobalException(ServiceExceptionEnum serviceExceptionEnum) {
-        this.code = serviceExceptionEnum.getCode();
-        this.message = serviceExceptionEnum.getMessage();
+	  this.code = serviceExceptionEnum.getCode();
+	  this.message = serviceExceptionEnum.getMessage();
     }
 
-    public GlobalException(Integer code, String message){
-        this.code = code;
-        this.message = message;
+    public GlobalException(Integer code, String message) {
+	  this.code = code;
+	  this.message = message;
     }
 
     public Integer getCode() {
-        return code;
+	  return code;
     }
 
     public void setCode(Integer code) {
-        this.code = code;
+	  this.code = code;
     }
 
     @Override
     public String getMessage() {
-        return message;
+	  return message;
     }
 
     public void setMessage(String message) {
-        this.message = message;
+	  this.message = message;
     }
 }

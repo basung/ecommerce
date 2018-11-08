@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2018-10-18-下午2:30
  */
 
-@Api(value = "租户店铺管理接口  租户店铺管理接口", tags = { "租户店铺管理接口  租户店铺管理接口" })
+@Api(value = "租户店铺管理接口  租户店铺管理接口", tags = {"租户店铺管理接口  租户店铺管理接口"})
 @RestController
 @RequestMapping("/admin/tenant")
 public class TenantController extends AutoEntityController<Tenant, String, GlobalException, TenantService> {
@@ -37,8 +37,7 @@ public class TenantController extends AutoEntityController<Tenant, String, Globa
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = tenantService;
     }
 
@@ -46,8 +45,7 @@ public class TenantController extends AutoEntityController<Tenant, String, Globa
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = Tenant.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 
@@ -82,7 +80,6 @@ public class TenantController extends AutoEntityController<Tenant, String, Globa
     public void get(@ApiParam(value = "标识", required = true) @PathVariable String id, HttpServletResponse response) throws Exception {
 	  getAutoEntity(id, response);
     }
-
 
 
 }

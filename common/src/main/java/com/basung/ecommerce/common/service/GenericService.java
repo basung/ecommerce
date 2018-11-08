@@ -60,6 +60,7 @@ public interface GenericService<T extends CommonEntity, ID extends Serializable,
      * 分页排序获取数据
      * 禁止使用该接口进行count操作
      * Pageable pageable = new PageRequest(0, 10, new Sort(Sort.Direction.DESC,"id"));
+     *
      * @param pageable
      * @return
      */
@@ -68,20 +69,22 @@ public interface GenericService<T extends CommonEntity, ID extends Serializable,
     /**
      * 多条件查询
      * 注：多个条件间是and关系 & 参数是属性对应的类型 使用时注意避免结果集过大
-     * @author
+     *
      * @param params {"username:like":"test"} 键的格式为字段名:过滤方式,过滤方式见{@code QueryTypeEnum}
      * @return
+     * @author
      */
     List<T> query(Specification params);
 
     /**
      * 分页多条件查询
      * 注：多个条件间是and关系 & 参数是属性对应的类型
-     * @author yangwk
-     * @time 2017年8月1日 下午3:50:46
-     * @param params {"username:like":"test"} 键的格式为字段名:过滤方式,过滤方式见{@code QueryTypeEnum}
+     *
+     * @param params   {"username:like":"test"} 键的格式为字段名:过滤方式,过滤方式见{@code QueryTypeEnum}
      * @param pageable 分页信息 new PageRequest(page, size,new Sort(Direction.DESC, "updateTime"))
      * @return
+     * @author yangwk
+     * @time 2017年8月1日 下午3:50:46
      */
     Page<T> query(Specification params, Pageable pageable);
 

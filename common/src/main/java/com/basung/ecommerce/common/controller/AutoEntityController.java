@@ -47,7 +47,7 @@ public abstract class AutoEntityController<T extends AutoEntity, ID extends Seri
 
     public void removeAutoEntity(String id, HttpServletResponse response) throws Exception {
 
-        autoEntityManager.delete((ID) id);
+	  autoEntityManager.delete((ID) id);
 	  ResponseUtils.writeSuccessResult(response);
 
     }
@@ -80,9 +80,9 @@ public abstract class AutoEntityController<T extends AutoEntity, ID extends Seri
 	  String asc = "";      //升序字段
 
 	  //获取用户token
-	  String token =request.getHeader("Authorization");
+	  String token = request.getHeader("Authorization");
 	  String adminUserId = "";
-	  if(token != null){
+	  if (token != null) {
 		adminUserId = JWTUtil.getUserId(token);
 	  }
 	  QueryParam queryParam = new QueryParam("tenantId", adminUserId);

@@ -38,7 +38,7 @@ public class GoodsSKU extends AutoEntity {
     /**
      * SKU图片
      */
-    @Column( name = "sku_image", length = 256 )
+    @Column(name = "sku_image", length = 256)
     private String skuImage;
 
     /**

@@ -22,25 +22,25 @@ public class VFile extends AutoEntity {
     /**
      * 文件名称
      */
-    @Column( name = "name", length = 128 )
+    @Column(name = "name", length = 128)
     private String name;
 
     /**
      * 文件类型
      */
-    @Column( name = "content_type" )
+    @Column(name = "content_type")
     private String contentType;
 
     /**
      * 文件路径
      */
-    @Column( name = "file_path" )
+    @Column(name = "file_path")
     private String filePath;
 
     /**
      * 文件大小
      */
-    @Column( name = "file_size" )
+    @Column(name = "file_size")
     private long fileSize;
 
 

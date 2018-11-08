@@ -8,7 +8,7 @@ import com.basung.ecommerce.common.repository.GenericRepository;
 public interface SpecDao extends GenericRepository<Spec, String> {
 
 
-//    @Query(value = " SELECT * FROM bss_admin_user WHERE login_name = ?1 ", nativeQuery = true)
+    //    @Query(value = " SELECT * FROM bss_admin_user WHERE login_name = ?1 ", nativeQuery = true)
     Spec getBySpecName(String specName);
 
 }

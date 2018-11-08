@@ -19,48 +19,48 @@ import java.util.Date;
 @Data
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public  abstract class CommonEntity implements Serializable, CommonConstant {
+public abstract class CommonEntity implements Serializable, CommonConstant {
 
-  private static final long serialVersionUID = 1195969732659409799L;
+    private static final long serialVersionUID = 1195969732659409799L;
 
-  @ApiModelProperty(value="版本")
-  @Version
-  @Column(name = "version")
-  private long version = 0;
+    @ApiModelProperty(value = "版本")
+    @Version
+    @Column(name = "version")
+    private long version = 0;
 
-  @ApiModelProperty(value="是否可用")
-  @Column(name = "is_active")
-  private Integer isActive = 1;
+    @ApiModelProperty(value = "是否可用")
+    @Column(name = "is_active")
+    private Integer isActive = 1;
 
-  @ApiModelProperty(value="是否删除")
-  @Column(name = "is_del")
-  private Byte isDel = 0;
+    @ApiModelProperty(value = "是否删除")
+    @Column(name = "is_del")
+    private Byte isDel = 0;
 
-  @ApiModelProperty(value="创建者")
-  @Column(name = "creator", updatable = false)
-  private String creator;
+    @ApiModelProperty(value = "创建者")
+    @Column(name = "creator", updatable = false)
+    private String creator;
 
-  @ApiModelProperty(value="创建时间")
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name="create_time", nullable = false, updatable = false)
-  private Date createTime = new Date();
+    @ApiModelProperty(value = "创建时间")
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "create_time", nullable = false, updatable = false)
+    private Date createTime = new Date();
 
-  @ApiModelProperty(value="最后修改人")
-  @Column(name = "modifier",updatable = true)
-  private String modifier;
+    @ApiModelProperty(value = "最后修改人")
+    @Column(name = "modifier", updatable = true)
+    private String modifier;
 
-  @LastModifiedDate
-  @ApiModelProperty(value="最后修改时间")
-  @Temporal(TemporalType.TIMESTAMP)
-  @Column(name="modifier_time", nullable = false )
-  private Date modifierTime;
+    @LastModifiedDate
+    @ApiModelProperty(value = "最后修改时间")
+    @Temporal(TemporalType.TIMESTAMP)
+    @Column(name = "modifier_time", nullable = false)
+    private Date modifierTime;
 
-  /**
-   * 排序码，越小越靠前
-   */
-  @ApiModelProperty(value="排序码")
-  @Column(name = "order_num")
-  private int orderNum = 0;
+    /**
+     * 排序码，越小越靠前
+     */
+    @ApiModelProperty(value = "排序码")
+    @Column(name = "order_num")
+    private int orderNum = 0;
 
 
 }

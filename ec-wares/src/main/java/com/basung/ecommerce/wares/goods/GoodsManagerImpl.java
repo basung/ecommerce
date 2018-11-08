@@ -61,11 +61,11 @@ public class GoodsManagerImpl extends GenericServiceImpl<Goods, String, GlobalEx
 
 	  //设置SKU
 	  Set<GoodsSKU> goodsSKUList = goods.getGoodsSkuList();
-	  goods.setGoodsSkuList(setGoodsSKU(goodsSKUList,goods));
+	  goods.setGoodsSkuList(setGoodsSKU(goodsSKUList, goods));
 
 	  //设置Tags
 	  Set<GoodsTags> goodsTagsList = goods.getGoodsTagsList();
-	  goods.setGoodsTagsList(setGoodsTags(goodsTagsList,goods));
+	  goods.setGoodsTagsList(setGoodsTags(goodsTagsList, goods));
 	  return goodsDao.save(goods);
     }
 

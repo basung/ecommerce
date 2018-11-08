@@ -19,31 +19,31 @@ public class News extends AutoEntity {
     /**
      * 文章名称
      */
-    @Column( name = "name", length = 128 )
+    @Column(name = "name", length = 128)
     private String name;
 
     /**
      * 文章作者
      */
-    @Column( name = "author", length = 128 )
+    @Column(name = "author", length = 128)
     private String author;
 
     /**
      * 文章来源
      */
-    @Column( name = "news_source", length = 128 )
+    @Column(name = "news_source", length = 128)
     private String newsSource;
 
     /**
      * 文章编辑
      */
-    @Column( name = "news_editor", length = 128 )
+    @Column(name = "news_editor", length = 128)
     private String newsEditor;
 
     /**
      * 文章logo
      */
-    @Column( name = "logo" )
+    @Column(name = "logo")
     private String logo;
 
     /**

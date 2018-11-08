@@ -20,24 +20,24 @@ import javax.annotation.Resource;
 @Service
 public class AdminUserServiceImpl extends GenericServiceImpl<AdminUser, String, GlobalException> implements AdminUserService {
 
-  @Resource
-  AdminUserRepository adminUserRepository;
+    @Resource
+    AdminUserRepository adminUserRepository;
 
-  protected GenericRepository<AdminUser, String> getRepository() {
-    return adminUserRepository;
-  }
+    protected GenericRepository<AdminUser, String> getRepository() {
+	  return adminUserRepository;
+    }
 
-  public AdminUser getAdminUserByUserName(String userName) {
-      AdminUser adminUser = this.adminUserRepository.getByUserName(userName);
-      return  adminUser;
-  }
+    public AdminUser getAdminUserByUserName(String userName) {
+	  AdminUser adminUser = this.adminUserRepository.getByUserName(userName);
+	  return adminUser;
+    }
 
-  public AdminUser getAdminUserByUserId(String userId){
+    public AdminUser getAdminUserByUserId(String userId) {
 
-      AdminUser adminUser = this.adminUserRepository.getAdminUserById(userId);
+	  AdminUser adminUser = this.adminUserRepository.getAdminUserById(userId);
 
-      return adminUser;
+	  return adminUser;
 
-  }
+    }
 
 }

@@ -50,7 +50,7 @@ public class UniqueID {
 	  } else {
 		StringBuilder code = new StringBuilder(len);
 
-		for(int i = 0; i < len; ++i) {
+		for (int i = 0; i < len; ++i) {
 		    code.append(ASCII_ARRAY[factory.nextInt(10)]);
 		}
 
@@ -66,7 +66,7 @@ public class UniqueID {
 	  } else {
 		StringBuilder code = new StringBuilder(len);
 
-		for(int i = 0; i < len; ++i) {
+		for (int i = 0; i < len; ++i) {
 		    code.append(ASCII_ARRAY[factory.nextInt(ASCII_ARRAY.length)]);
 		}
 

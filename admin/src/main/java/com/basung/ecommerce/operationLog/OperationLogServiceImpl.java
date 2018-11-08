@@ -17,7 +17,7 @@ import javax.annotation.Resource;
 
 @Transactional
 @Service
-public class OperationLogServiceImpl extends GenericServiceImpl<OperationLog, String, GlobalException> implements OperationLogService{
+public class OperationLogServiceImpl extends GenericServiceImpl<OperationLog, String, GlobalException> implements OperationLogService {
 
     @Resource
     OperationLogRepository operationLogRepository;

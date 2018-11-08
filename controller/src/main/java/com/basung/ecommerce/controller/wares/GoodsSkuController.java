@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2018-10-19-下午3:13
  */
 
-@Api(value = "商品SKU  商品SKU", tags = { "商品SKU  商品SKU" })
+@Api(value = "商品SKU  商品SKU", tags = {"商品SKU  商品SKU"})
 @RestController
 @RequestMapping("/wares/sku")
 public class GoodsSkuController extends AutoEntityController<GoodsSKU, String, GlobalException, GoodsSKUManager> {
@@ -37,8 +37,7 @@ public class GoodsSkuController extends AutoEntityController<GoodsSKU, String, G
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = goodsSKUManager;
     }
 
@@ -46,8 +45,7 @@ public class GoodsSkuController extends AutoEntityController<GoodsSKU, String, G
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = GoodsSKU.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 

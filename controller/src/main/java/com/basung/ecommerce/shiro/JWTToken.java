@@ -13,16 +13,16 @@ public class JWTToken implements AuthenticationToken {
     private String token;
 
     public JWTToken(String token) {
-        this.token = token;
+	  this.token = token;
     }
 
     @Override
     public Object getPrincipal() {
-        return token;
+	  return token;
     }
 
     @Override
     public Object getCredentials() {
-        return token;
+	  return token;
     }
 }

@@ -21,7 +21,7 @@ public class FileTypeUtils {
     }
 
     public static String getExtName(String contentType) {
-	  return (String)typeToExtMap.get(contentType.toLowerCase());
+	  return (String) typeToExtMap.get(contentType.toLowerCase());
     }
 
     static {

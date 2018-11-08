@@ -57,17 +57,17 @@ public class RolePermissionController extends AutoEntityController<RolePermissio
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public void add(@ApiParam(value = "对象", required = true) @Validated @RequestBody RolePermission rolePermission, Errors errors, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
-        controllerUtils.setTenantInfoByCreate(rolePermission);
+	  controllerUtils.setTenantInfoByCreate(rolePermission);
 
-        addAutoEntity(rolePermission, request, response);
+	  addAutoEntity(rolePermission, request, response);
     }
 
     @ApiOperation(value = "为角色添加权限---传输格式：'1，2，3，4，5，6 ")
     @RequestMapping(value = "/createRolePermission", method = RequestMethod.POST)
     public void add(@ApiParam(value = "对象", required = true) @Validated @RequestParam("roleId") String roleId, @RequestParam("permissions") String permissionIds, HttpServletResponse response) throws Exception {
 
-        this.rolePermissionService.createRolePermission(roleId, permissionIds);
-        ResponseUtils.writeSuccessResult(response);
+	  this.rolePermissionService.createRolePermission(roleId, permissionIds);
+	  ResponseUtils.writeSuccessResult(response);
 
     }
 
@@ -76,9 +76,9 @@ public class RolePermissionController extends AutoEntityController<RolePermissio
     @ApiOperation(value = "获取单个对象", httpMethod = "GET", response = RolePermission.class)
     public void get(@ApiParam(value = "获取一个角色的所有权限", required = true) @PathVariable String roleId, HttpServletResponse response) throws Exception {
 
-        List<Permission> permissionList = this.permissionService.getPermissionsByRoleId(roleId);
+	  List<Permission> permissionList = this.permissionService.getPermissionsByRoleId(roleId);
 
-        ResponseUtils.writeSuccessResult(response, permissionList);
+	  ResponseUtils.writeSuccessResult(response, permissionList);
     }
 
 }

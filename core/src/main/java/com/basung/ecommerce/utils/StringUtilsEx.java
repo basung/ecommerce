@@ -16,7 +16,7 @@ public class StringUtilsEx extends StringUtils {
     }
 
     public static final byte[] toBytes(String str) {
-	  return toBytes(str, (String)null);
+	  return toBytes(str, (String) null);
     }
 
     public static final byte[] toBytes(String str, String encoding) {
@@ -65,6 +65,6 @@ public class StringUtilsEx extends StringUtils {
     }
 
     public static final String toString(byte[] bytes) {
-	  return toString(bytes, (String)null);
+	  return toString(bytes, (String) null);
     }
 }

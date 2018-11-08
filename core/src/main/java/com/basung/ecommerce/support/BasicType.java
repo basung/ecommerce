@@ -22,17 +22,17 @@ public enum BasicType {
     public static final Map<Class<?>, Class<?>> primitiveWrapperMap = new HashMap<Class<?>, Class<?>>(8);
 
     static {
-        wrapperPrimitiveMap.put(Boolean.class, boolean.class);
-        wrapperPrimitiveMap.put(Byte.class, byte.class);
-        wrapperPrimitiveMap.put(Character.class, char.class);
-        wrapperPrimitiveMap.put(Double.class, double.class);
-        wrapperPrimitiveMap.put(Float.class, float.class);
-        wrapperPrimitiveMap.put(Integer.class, int.class);
-        wrapperPrimitiveMap.put(Long.class, long.class);
-        wrapperPrimitiveMap.put(Short.class, short.class);
+	  wrapperPrimitiveMap.put(Boolean.class, boolean.class);
+	  wrapperPrimitiveMap.put(Byte.class, byte.class);
+	  wrapperPrimitiveMap.put(Character.class, char.class);
+	  wrapperPrimitiveMap.put(Double.class, double.class);
+	  wrapperPrimitiveMap.put(Float.class, float.class);
+	  wrapperPrimitiveMap.put(Integer.class, int.class);
+	  wrapperPrimitiveMap.put(Long.class, long.class);
+	  wrapperPrimitiveMap.put(Short.class, short.class);
 
-        for (Map.Entry<Class<?>, Class<?>> entry : wrapperPrimitiveMap.entrySet()) {
-            primitiveWrapperMap.put(entry.getValue(), entry.getKey());
-        }
+	  for (Map.Entry<Class<?>, Class<?>> entry : wrapperPrimitiveMap.entrySet()) {
+		primitiveWrapperMap.put(entry.getValue(), entry.getKey());
+	  }
     }
 }

@@ -59,18 +59,18 @@ public class AdminUserController extends AutoEntityController<AdminUser, String,
 
     @ApiOperation(value = "新增  ", notes = "保存  新增/修改的  ")
     @RequestMapping(value = "/create", method = RequestMethod.POST)
-    public void add( @ApiParam(value = "对象", required = true) @RequestBody @Valid AdminUser adminUser, BindingResult bindingResult, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public void add(@ApiParam(value = "对象", required = true) @RequestBody @Valid AdminUser adminUser, BindingResult bindingResult, HttpServletRequest request, HttpServletResponse response) throws Exception {
 
 	  if (bindingResult.hasErrors()) {
-		logger.info(" bindingResult.getFieldError().getDefaultMessage() === {} ",bindingResult.getFieldError().getDefaultMessage());
-		ResponseUtils.writeErrorResult(response, 400,bindingResult.getFieldError().getDefaultMessage());
+		logger.info(" bindingResult.getFieldError().getDefaultMessage() === {} ", bindingResult.getFieldError().getDefaultMessage());
+		ResponseUtils.writeErrorResult(response, 400, bindingResult.getFieldError().getDefaultMessage());
 	  }
 
 	  // 判断账号是否重复
 	  AdminUser user = adminUserService.getAdminUserByUserName(adminUser.getLoginName());
 
 	  if (user != null) {
-		ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_HAS_EXISTED.getCode(),  ExceptionEnum.USER_HAS_EXISTED.getMessage());
+		ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_HAS_EXISTED.getCode(), ExceptionEnum.USER_HAS_EXISTED.getMessage());
 	  } else {
 
 		// 完善账号信息
@@ -91,7 +91,7 @@ public class AdminUserController extends AutoEntityController<AdminUser, String,
     @ApiOperation(value = "修改", httpMethod = "PUT")
     public void update(@ApiParam(value = "对象", required = true) @Validated @RequestBody AdminUser adminUser, Errors errors, HttpServletResponse response) throws Exception {
 	  controllerUtils.setTenantInfoByUpdate(adminUser);
-        updateAutoEntity(adminUser, response);
+	  updateAutoEntity(adminUser, response);
     }
 
     @ResponseBody

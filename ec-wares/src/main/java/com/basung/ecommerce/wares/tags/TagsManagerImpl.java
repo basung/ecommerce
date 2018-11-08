@@ -19,6 +19,8 @@ public class TagsManagerImpl extends GenericServiceImpl<Tags, String, GlobalExce
     @Resource
     TagsDao tagsDao;
 
-    protected GenericRepository<Tags, String> getRepository() { return tagsDao; }
+    protected GenericRepository<Tags, String> getRepository() {
+	  return tagsDao;
+    }
 
 }

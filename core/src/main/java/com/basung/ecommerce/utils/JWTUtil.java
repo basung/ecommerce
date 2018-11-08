@@ -29,41 +29,41 @@ public class JWTUtil {
      * @return 加密的token
      */
     public static String createToken(String userId) {
-        try {
-            Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
-            Algorithm algorithm = Algorithm.HMAC256(SECRET);
-            // 附带userId信息
-            return JWT.create()
-                    .withClaim("userId", userId)
-                    //到期时间
-                    .withExpiresAt(date)
-                    //创建一个新的JWT，并使用给定的算法进行标记
-                    .sign(algorithm);
-        } catch (UnsupportedEncodingException e) {
-            return null;
-        }
+	  try {
+		Date date = new Date(System.currentTimeMillis() + EXPIRE_TIME);
+		Algorithm algorithm = Algorithm.HMAC256(SECRET);
+		// 附带userId信息
+		return JWT.create()
+			  .withClaim("userId", userId)
+			  //到期时间
+			  .withExpiresAt(date)
+			  //创建一个新的JWT，并使用给定的算法进行标记
+			  .sign(algorithm);
+	  } catch (UnsupportedEncodingException e) {
+		return null;
+	  }
     }
 
     /**
      * 校验 token 是否正确
      *
-     * @param token    密钥
+     * @param token  密钥
      * @param userId 用户名
      * @return 是否正确
      */
     public static boolean verify(String token, String userId) {
-        try {
-            Algorithm algorithm = Algorithm.HMAC256(SECRET);
-            //在token中附带了userId信息
-            JWTVerifier verifier = JWT.require(algorithm)
-                    .withClaim("userId", userId)
-                    .build();
-            //验证 token
-            verifier.verify(token);
-            return true;
-        } catch (Exception exception) {
-            return false;
-        }
+	  try {
+		Algorithm algorithm = Algorithm.HMAC256(SECRET);
+		//在token中附带了userId信息
+		JWTVerifier verifier = JWT.require(algorithm)
+			  .withClaim("userId", userId)
+			  .build();
+		//验证 token
+		verifier.verify(token);
+		return true;
+	  } catch (Exception exception) {
+		return false;
+	  }
     }
 
     /**
@@ -72,12 +72,12 @@ public class JWTUtil {
      * @return token中包含的用户名
      */
     public static String getUserId(String token) {
-        try {
-            DecodedJWT jwt = JWT.decode(token);
-            return jwt.getClaim("userId").asString();
-        } catch (JWTDecodeException e) {
-            return null;
-        }
+	  try {
+		DecodedJWT jwt = JWT.decode(token);
+		return jwt.getClaim("userId").asString();
+	  } catch (JWTDecodeException e) {
+		return null;
+	  }
     }
 
     /**
@@ -86,12 +86,12 @@ public class JWTUtil {
      * @return token中包含的时间
      */
     public static String getExpiresAt(String token) {
-        try {
-            DecodedJWT jwt = JWT.decode(token);
-            return jwt.getExpiresAt().toString();
-        } catch (JWTDecodeException e) {
-            return null;
-        }
+	  try {
+		DecodedJWT jwt = JWT.decode(token);
+		return jwt.getExpiresAt().toString();
+	  } catch (JWTDecodeException e) {
+		return null;
+	  }
     }
 
 

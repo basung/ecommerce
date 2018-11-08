@@ -30,7 +30,7 @@ public class AutoEntity extends CommonEntity {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
 
-    @ApiModelProperty(value="租户Id")
+    @ApiModelProperty(value = "租户Id")
     @Column(name = "tenant_id", updatable = false)
     private String tenantId;
 

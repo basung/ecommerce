@@ -18,29 +18,29 @@ public class SpringContextHolder implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        SpringContextHolder.applicationContext = applicationContext;
+	  SpringContextHolder.applicationContext = applicationContext;
     }
 
     public static ApplicationContext getApplicationContext() {
-        assertApplicationContext();
-        return applicationContext;
+	  assertApplicationContext();
+	  return applicationContext;
     }
 
     @SuppressWarnings("unchecked")
     public static <T> T getBean(String beanName) {
-        assertApplicationContext();
-        return (T) applicationContext.getBean(beanName);
+	  assertApplicationContext();
+	  return (T) applicationContext.getBean(beanName);
     }
 
     public static <T> T getBean(Class<T> requiredType) {
-        assertApplicationContext();
-        return applicationContext.getBean(requiredType);
+	  assertApplicationContext();
+	  return applicationContext.getBean(requiredType);
     }
 
     private static void assertApplicationContext() {
-        if (SpringContextHolder.applicationContext == null) {
-            throw new RuntimeException("applicaitonContext属性为null,请检查是否注入了SpringContextHolder!");
-        }
+	  if (SpringContextHolder.applicationContext == null) {
+		throw new RuntimeException("applicaitonContext属性为null,请检查是否注入了SpringContextHolder!");
+	  }
     }
 
 }

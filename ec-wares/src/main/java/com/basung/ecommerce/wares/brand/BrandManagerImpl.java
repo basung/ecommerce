@@ -19,5 +19,7 @@ public class BrandManagerImpl extends GenericServiceImpl<Brand, String, GlobalEx
     @Resource
     BrandDao brandDao;
 
-    protected GenericRepository<Brand, String> getRepository(){ return brandDao; }
+    protected GenericRepository<Brand, String> getRepository() {
+	  return brandDao;
+    }
 }

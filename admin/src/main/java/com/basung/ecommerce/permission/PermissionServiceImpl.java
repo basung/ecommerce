@@ -21,18 +21,18 @@ import java.util.List;
 @Service
 public class PermissionServiceImpl extends GenericServiceImpl<Permission, String, GlobalException> implements PermissionService {
 
-  @Resource
-  PermissionRepository permissionRepository;
+    @Resource
+    PermissionRepository permissionRepository;
 
-  protected GenericRepository<Permission, String> getRepository() {
-    return permissionRepository;
-  }
+    protected GenericRepository<Permission, String> getRepository() {
+	  return permissionRepository;
+    }
 
 
-  public List getPermissionsByRoleId(String roleId){
+    public List getPermissionsByRoleId(String roleId) {
 
-    return permissionRepository.getPermissionsByRoleId(roleId);
+	  return permissionRepository.getPermissionsByRoleId(roleId);
 
-  }
+    }
 
 }

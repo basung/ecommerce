@@ -40,20 +40,20 @@ public class RolePermissionServiceImpl extends GenericServiceImpl<RolePermission
 
     public void createRolePermission(String roleId, String permissionIds) throws GlobalException {
 
-        logger.info("permissionIds === {}", permissionIds );
+	  logger.info("permissionIds === {}", permissionIds);
 
-        //1、删除所有该角色原有的权限
+	  //1、删除所有该角色原有的权限
 	  this.rolePermissionRepository.removeByRoleId(roleId);
 
 	  //2、数据初始化
 	  List<RolePermission> rolePermissionList = new ArrayList();
 
 	  String[] permissionIdsArr = permissionIds.split(",");
-	  logger.info("permissionIds === {}", Arrays.toString(permissionIdsArr) );
+	  logger.info("permissionIds === {}", Arrays.toString(permissionIdsArr));
 
-	  if(permissionIdsArr.length > 1){
-		logger.info("permissionIdsArr.length === {}",permissionIdsArr.length );
-		for(int index = 0; index < permissionIdsArr.length; index ++) {
+	  if (permissionIdsArr.length > 1) {
+		logger.info("permissionIdsArr.length === {}", permissionIdsArr.length);
+		for (int index = 0; index < permissionIdsArr.length; index++) {
 		    String permissionId = permissionIdsArr[index];
 		    RolePermission rolePermission = new RolePermission();
 		    rolePermission.setRoleId(roleId);
@@ -78,7 +78,7 @@ public class RolePermissionServiceImpl extends GenericServiceImpl<RolePermission
 
 	  Iterator<RolePermission> iterator = rolePermissionList.iterator();
 
-	  while(iterator.hasNext()){  //执行过程中会执行数据锁定，性能稍差，若在循环过程中要去掉某个元素只能调用iter.remove()方法。
+	  while (iterator.hasNext()) {  //执行过程中会执行数据锁定，性能稍差，若在循环过程中要去掉某个元素只能调用iter.remove()方法。
 
 		String permissionId = iterator.next().getRelationId();
 		Permission permission = permissionService.findById(permissionId);
@@ -93,7 +93,7 @@ public class RolePermissionServiceImpl extends GenericServiceImpl<RolePermission
 		resultList.add(permissionMap);
 	  }
 
-        return  rolePermissionList;
+	  return rolePermissionList;
 
     }
 }

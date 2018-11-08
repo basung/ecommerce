@@ -38,7 +38,7 @@ public class ControllerUtils<T extends AutoEntity> {
 	  AdminUser adminUser;
 	  String token = request.getHeader("Authorization");
 	  logger.info(" authorization === {} ", token);
-	  if(token != null){
+	  if (token != null) {
 		String adminUserId = JWTUtil.getUserId(token);
 		//判断该ID的用户是否存在缓存中
 		if (redisUtil.hasKey("User_Info_" + adminUserId)) {
@@ -55,7 +55,7 @@ public class ControllerUtils<T extends AutoEntity> {
 
     }
 
-    public T setTenantInfoByUpdate( T autoEntity) {
+    public T setTenantInfoByUpdate(T autoEntity) {
 
 	  ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
 	  HttpServletRequest request = attributes.getRequest();

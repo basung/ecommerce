@@ -48,7 +48,7 @@ public class JWTUtilTest {
     @Test
     public void getExpiresAtTest() {
 
-	  String time =  getExpiresAt(token);
+	  String time = getExpiresAt(token);
 	  logger.info(" time === {} ", time);
 
     }

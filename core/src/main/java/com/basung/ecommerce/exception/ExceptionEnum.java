@@ -1,12 +1,11 @@
 package com.basung.ecommerce.exception;
 
 /**
- *
  * Description: 返回状态枚举定义
- *
+ * <p>
  * Date: 2018-10-09-上午9:47
  */
-public enum ExceptionEnum implements ServiceExceptionEnum  {
+public enum ExceptionEnum implements ServiceExceptionEnum {
 
 
     /**

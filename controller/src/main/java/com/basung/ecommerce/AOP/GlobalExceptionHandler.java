@@ -18,9 +18,8 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
  * controller 增强器
- *
+ * <p>
  * Date: 2018-10-09-上午10:25
  */
 
@@ -49,21 +48,22 @@ public class GlobalExceptionHandler {
 
     /**
      * 全局异常捕捉处理
+     *
      * @param e
      * @return
      */
     @ResponseBody
     @ExceptionHandler(value = Exception.class)
     public void errorHandler(Exception e, HttpServletResponse response) throws Exception {
-        logger.error("error message === {} ", e.getMessage());
-        ResponseUtils.writeErrorResult(response, 400, e.getMessage());
+	  logger.error("error message === {} ", e.getMessage());
+	  ResponseUtils.writeErrorResult(response, 400, e.getMessage());
     }
 
     //spring 处理异常的接口
     @ExceptionHandler(ApplicationException.class)
-    public void handlerException(Exception e , HttpServletResponse response) throws Exception {
-        logger.error("控制器增强处理异常");
-        ResponseUtils.writeErrorResult(response, 400, e.getMessage());
+    public void handlerException(Exception e, HttpServletResponse response) throws Exception {
+	  logger.error("控制器增强处理异常");
+	  ResponseUtils.writeErrorResult(response, 400, e.getMessage());
     }
 
 
@@ -74,7 +74,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ResponseBody
     public void ServiceError(GlobalException error, HttpServletResponse response) throws Exception {
-        ResponseUtils.writeErrorResult(response, error);
+	  ResponseUtils.writeErrorResult(response, error);
     }
 
     /**
@@ -83,8 +83,8 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(AuthenticationException.class)
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public void unAuth(AuthenticationException error, HttpServletResponse response) throws Exception {
-        logger.info("AuthenticationException error === {} ", error);
-        ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_NOT_LOGGED_IN.getCode(), error.getMessage());
+	  logger.info("AuthenticationException error === {} ", error);
+	  ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_NOT_LOGGED_IN.getCode(), error.getMessage());
     }
 
     /**
@@ -94,23 +94,23 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(RuntimeException.class)
     @ResponseBody
     public void notFount(RuntimeException e, HttpServletResponse response) throws Exception {
-        ResponseUtils.writeErrorResult(response, ExceptionEnum.SERVER_ERROR.getCode(), e.getMessage());
+	  ResponseUtils.writeErrorResult(response, ExceptionEnum.SERVER_ERROR.getCode(), e.getMessage());
     }
 
     // 捕捉shiro的异常
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(ShiroException.class)
     public void groupException(ShiroException error, HttpServletResponse response) throws Exception {
-        logger.info("ShiroException error === {} ", error.getMessage());
-        ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_TOKEN_ERROR.getCode(), ExceptionEnum.USER_TOKEN_ERROR.getMessage());
+	  logger.info("ShiroException error === {} ", error.getMessage());
+	  ResponseUtils.writeErrorResult(response, ExceptionEnum.USER_TOKEN_ERROR.getCode(), ExceptionEnum.USER_TOKEN_ERROR.getMessage());
     }
 
     // 捕捉UnauthorizedException
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     @ExceptionHandler(UnauthorizedException.class)
     public void unauthorizedException(ShiroException error, HttpServletResponse response) throws Exception {
-        logger.info("unauthorizedException error === {} ", error.getMessage());
-        ResponseUtils.writeErrorResult(response, 401, error.getMessage());
+	  logger.info("unauthorizedException error === {} ", error.getMessage());
+	  ResponseUtils.writeErrorResult(response, 401, error.getMessage());
     }
 //
 //    // 捕捉其他所有异常

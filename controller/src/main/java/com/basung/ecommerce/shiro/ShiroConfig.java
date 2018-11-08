@@ -108,10 +108,11 @@ public class ShiroConfig {
      * shiro缓存管理器; 需要注入对应的其它的实体类中:
      * 1、安全管理器：securityManager
      * 可见securityManager是整个shiro的核心；
+     *
      * @return
      */
     @Bean
-    public EhCacheManager ehCacheManager(){
+    public EhCacheManager ehCacheManager() {
 	  EhCacheManager cacheManager = new EhCacheManager();
 	  cacheManager.setCacheManagerConfigFile("classpath:ehcache-shiro.xml");
 	  return cacheManager;

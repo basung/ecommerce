@@ -22,20 +22,20 @@ public class NewsCategory extends AutoEntity {
     /**
      * 文章类别名称
      */
-    @Column( name = "name", length = 128 )
+    @Column(name = "name", length = 128)
     private String name;
 
     /**
      * 文章类别logo
      */
-    @Column( name = "logo" )
+    @Column(name = "logo")
     private String logo;
 
     /**
      * 文章类别父级ID
      */
     @Column(name = "parent_id", nullable = false, length = 64)
-    private String parentId=ROOT_ID;
+    private String parentId = ROOT_ID;
 
     /**
      * 文章类别描述

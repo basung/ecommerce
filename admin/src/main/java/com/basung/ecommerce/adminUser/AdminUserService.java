@@ -12,7 +12,7 @@ import com.basung.ecommerce.exception.GlobalException;
  */
 public interface AdminUserService extends GenericService<AdminUser, String, GlobalException> {
 
-    AdminUser getAdminUserByUserName(String userName) ;
+    AdminUser getAdminUserByUserName(String userName);
 
     AdminUser getAdminUserByUserId(String userId);
 

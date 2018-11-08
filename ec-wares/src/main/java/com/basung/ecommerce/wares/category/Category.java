@@ -25,19 +25,19 @@ public class Category extends AutoEntity {
     /**
      * 商品分类名称
      */
-    @Column( name = "category_name", length = 128 )
+    @Column(name = "category_name", length = 128)
     private String categoryName;
 
     /**
      * 商品分类图片
      */
-    @Column( name = "category_logo", length = 256 )
+    @Column(name = "category_logo", length = 256)
     private String categoryLogo;
 
     /**
      * 商品分类父级ID
      */
-    @Column( name = "parent_id", length = 256 )
+    @Column(name = "parent_id", length = 256)
     private String parentId = ROOT_ID;
 
     /**

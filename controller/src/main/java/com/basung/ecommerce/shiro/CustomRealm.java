@@ -113,11 +113,11 @@ public class CustomRealm extends AuthorizingRealm {
 	  List<Permission> permissionList = new ArrayList();
 
 	  //判断该ID的用户是否存在缓存中
-	  if(redisUtil.hasKey("User_Permission_" + adminUserId)){
+	  if (redisUtil.hasKey("User_Permission_" + adminUserId)) {
 		String permissions = redisUtil.get("User_Permission_" + adminUserId);
-		permissionList = JsonUtils.jsonToList(permissions,Permission.class);
+		permissionList = JsonUtils.jsonToList(permissions, Permission.class);
 
-	  }else {
+	  } else {
 		//获得该用户角色Id
 		String roleId = adminUser.getRoleId();
 		try {

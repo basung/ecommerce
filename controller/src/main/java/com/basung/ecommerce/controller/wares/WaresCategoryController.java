@@ -23,10 +23,10 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2018-10-19-下午2:58
  */
 
-@Api(value = "商品分类  商品分类", tags = { "商品分类  商品分类" })
+@Api(value = "商品分类  商品分类", tags = {"商品分类  商品分类"})
 @RestController
 @RequestMapping("/wares/category")
-public class WaresCategoryController extends AutoEntityController<Category, String, GlobalException, CategoryManager>{
+public class WaresCategoryController extends AutoEntityController<Category, String, GlobalException, CategoryManager> {
 
 
     private final static Logger logger = LoggerFactory.getLogger(WaresCategoryController.class);
@@ -38,16 +38,14 @@ public class WaresCategoryController extends AutoEntityController<Category, Stri
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = categoryManager;
     }
 
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = Category.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 

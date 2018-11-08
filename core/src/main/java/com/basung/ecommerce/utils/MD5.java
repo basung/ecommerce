@@ -27,7 +27,7 @@ public class MD5 {
      * shiro密码加密工具类
      *
      * @param credentials 密码
-     * @param saltSource 密码盐
+     * @param saltSource  密码盐
      * @return
      */
     public static String md5(String credentials, String saltSource) {
@@ -37,6 +37,7 @@ public class MD5 {
 
     /**
      * 获取随机盐值
+     *
      * @param length
      * @return
      */

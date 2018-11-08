@@ -16,20 +16,20 @@ public class SqlUtil {
      * @author fengshuonan
      */
     public static String parse(List<?> list) {
-        String str = "";
-        if (list != null && list.size() > 0) {
-            str = str + "?";
-            for (int i = 1; i < list.size(); i++) {
-                str = str + ",?";
-            }
-        }
-        return str;
+	  String str = "";
+	  if (list != null && list.size() > 0) {
+		str = str + "?";
+		for (int i = 1; i < list.size(); i++) {
+		    str = str + ",?";
+		}
+	  }
+	  return str;
     }
 
     public static void main(String[] args) {
-        ArrayList<Object> arrayList = new ArrayList<>();
-        arrayList.add(2);
-        arrayList.add(2);
-        System.out.println(parse(arrayList));
+	  ArrayList<Object> arrayList = new ArrayList<>();
+	  arrayList.add(2);
+	  arrayList.add(2);
+	  System.out.println(parse(arrayList));
     }
 }

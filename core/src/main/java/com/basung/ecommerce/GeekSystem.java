@@ -41,12 +41,12 @@ public class GeekSystem {
 		Enumeration allNetInterfaces = NetworkInterface.getNetworkInterfaces();
 		ArrayList addresses = new ArrayList();
 
-		while(allNetInterfaces.hasMoreElements()) {
-		    NetworkInterface netInterface = (NetworkInterface)allNetInterfaces.nextElement();
+		while (allNetInterfaces.hasMoreElements()) {
+		    NetworkInterface netInterface = (NetworkInterface) allNetInterfaces.nextElement();
 		    Enumeration en = netInterface.getInetAddresses();
 
-		    while(en.hasMoreElements()) {
-			  InetAddress ip = (InetAddress)en.nextElement();
+		    while (en.hasMoreElements()) {
+			  InetAddress ip = (InetAddress) en.nextElement();
 			  addresses.add(ip);
 		    }
 		}
@@ -67,7 +67,7 @@ public class GeekSystem {
     }
 
     public static String getProperty(String key) {
-	  String value = (String)properties.get(key);
+	  String value = (String) properties.get(key);
 	  if (value == null) {
 		value = System.getProperty(key);
 	  }
@@ -76,7 +76,7 @@ public class GeekSystem {
     }
 
     public static String getProperty(String key, String defValue) {
-	  String value = (String)properties.get(key);
+	  String value = (String) properties.get(key);
 	  return value == null ? System.getProperty(key, defValue) : value;
     }
 
@@ -190,7 +190,7 @@ public class GeekSystem {
 	  StringBuilder sb = new StringBuilder(8);
 	  int i = 0;
 
-	  while(i < md5.length) {
+	  while (i < md5.length) {
 		sb.append(ENCODER[(md5[i++] & 48 | md5[i++] & 15) % 36]);
 	  }
 

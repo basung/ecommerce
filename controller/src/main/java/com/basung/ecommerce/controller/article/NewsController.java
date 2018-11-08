@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  * Date: 2018-10-18-下午3:43
  */
 
-@Api(value = "新闻接口  新闻接口", tags = { "新闻接口  新闻接口" })
+@Api(value = "新闻接口  新闻接口", tags = {"新闻接口  新闻接口"})
 @RestController
 @RequestMapping("/article/news")
 public class NewsController extends AutoEntityController<News, String, GlobalException, NewsService> {
@@ -37,8 +37,7 @@ public class NewsController extends AutoEntityController<News, String, GlobalExc
     private ControllerUtils controllerUtils;
 
     @PostConstruct
-    public void init()
-    {
+    public void init() {
 	  this.autoEntityManager = newsService;
     }
 
@@ -46,8 +45,7 @@ public class NewsController extends AutoEntityController<News, String, GlobalExc
     @ResponseBody
     @GetMapping(value = "query")
     @ApiOperation(value = "查询列表", httpMethod = "GET", response = News.class)
-    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception
-    {
+    public void query(HttpServletRequest request, HttpServletResponse response) throws Exception {
 	  queryAutoEntity(request, response);
     }
 

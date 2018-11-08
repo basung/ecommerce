@@ -24,19 +24,19 @@ public class OperationLog extends AutoEntity {
     /**
      * 用户id
      */
-    @Column(name = "user_id",  length = 128)
+    @Column(name = "user_id", length = 128)
     private String userId;
 
     /**
      * 用户名
      */
-    @Column(name = "user_Name",  length = 128)
+    @Column(name = "user_Name", length = 128)
     private String userName;
 
     /**
      * 请求URL
      */
-    @Column(name = "url",  length = 256)
+    @Column(name = "url", length = 256)
     private String url;
 
     /**
@@ -47,7 +47,7 @@ public class OperationLog extends AutoEntity {
     /**
      * 类方法
      */
-    @Column(name = "class_method",  length = 256)
+    @Column(name = "class_method", length = 256)
     private String classMethod;
 
 

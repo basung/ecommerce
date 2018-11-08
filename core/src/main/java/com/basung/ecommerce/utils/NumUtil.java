@@ -18,12 +18,12 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String keepRandomPoint(Double value, int n) {
-        if (value == null) {
-            value = 0.00;
-            return new BigDecimal(value).setScale(n, RoundingMode.HALF_UP).toString();
-        } else {
-            return new BigDecimal(value).setScale(n, RoundingMode.HALF_UP).toString();
-        }
+	  if (value == null) {
+		value = 0.00;
+		return new BigDecimal(value).setScale(n, RoundingMode.HALF_UP).toString();
+	  } else {
+		return new BigDecimal(value).setScale(n, RoundingMode.HALF_UP).toString();
+	  }
     }
 
     /**
@@ -31,7 +31,7 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String keep2Point(double value) {
-        return keepRandomPoint(value, 2);
+	  return keepRandomPoint(value, 2);
     }
 
     /**
@@ -39,7 +39,7 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String keep1Point(double value) {
-        return keepRandomPoint(value, 1);
+	  return keepRandomPoint(value, 1);
     }
 
     /**
@@ -47,8 +47,8 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String keepRandomPointZero(double value, int n) {
-        DecimalFormat df = new DecimalFormat("#0.00");
-        return df.format(Double.valueOf(keepRandomPoint(value, n)));
+	  DecimalFormat df = new DecimalFormat("#0.00");
+	  return df.format(Double.valueOf(keepRandomPoint(value, n)));
     }
 
     /**
@@ -56,7 +56,7 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String keep2PointZero(double value) {
-        return keepRandomPointZero(value, 2);
+	  return keepRandomPointZero(value, 2);
     }
 
     /**
@@ -64,10 +64,10 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String percentRandomPoint(double value, int n) {
-        NumberFormat percent = NumberFormat.getPercentInstance();
-        percent.setGroupingUsed(false);
-        percent.setMaximumFractionDigits(n);
-        return percent.format(value);
+	  NumberFormat percent = NumberFormat.getPercentInstance();
+	  percent.setGroupingUsed(false);
+	  percent.setMaximumFractionDigits(n);
+	  return percent.format(value);
     }
 
     /**
@@ -75,7 +75,7 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String percent2Point(double value) {
-        return percentRandomPoint(value, 2);
+	  return percentRandomPoint(value, 2);
     }
 
     /**
@@ -83,7 +83,7 @@ public class NumUtil {
      * @author fengshuonan
      */
     public static String latLngPoint(double value) {
-        return keepRandomPoint(value, 3);
+	  return keepRandomPoint(value, 3);
     }
 
 }

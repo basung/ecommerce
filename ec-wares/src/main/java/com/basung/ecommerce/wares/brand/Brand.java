@@ -19,32 +19,32 @@ public class Brand extends AutoEntity {
     /**
      * 商品品牌中文名称
      */
-    @Column( name = "brand_name", length = 128 )
+    @Column(name = "brand_name", length = 128)
     private String brandName;
 
     /**
      * 商品品牌英文名称
      */
-    @Column( name = "brand_en_name", length = 128 )
+    @Column(name = "brand_en_name", length = 128)
     private String brandEnName;
 
     /**
      * 商品品牌图片
      */
-    @Column( name = "brand_logo", length = 256 )
+    @Column(name = "brand_logo", length = 256)
     private String brandLogo;
 
     /**
      * 商品品牌官网地址
      */
-    @Column( name = "brand_url", length = 256 )
+    @Column(name = "brand_url", length = 256)
     private String brandUrl;
 
     /**
      * 品牌故事
      */
     @Lob
-    @Column( name = "brand_desc" )
+    @Column(name = "brand_desc")
     private String brandDesc;
 
 
